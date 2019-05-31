@@ -1,0 +1,402 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+    <title>FTP使用教程(及其它零碎问题解答?) - IT侠的博客</title>
+    <meta name="keywords" content="">
+    
+    <meta property="og:title" content="FTP使用教程(及其它零碎问题解答?)">
+    <meta property="og:site_name" content="IT侠的博客">
+    <meta property="og:image" content="/img/author.jpg"> 
+    <meta name="title" content="FTP使用教程(及其它零碎问题解答?) - IT侠的博客" />
+    <meta name="description" content="IT侠博客专为软件教学系列的文档"> 
+    
+    
+    <link rel="shortcut icon" href="https://itxia.github.io/soft/img/github.ico" />
+    <link rel="apple-touch-icon" href="https://itxia.github.io/soft/img/github.png" />
+    <link rel="apple-touch-icon-precomposed" href="https://itxia.github.io/soft/img/github.png" />
+    
+    <link href="https://itxia.github.io/soft/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+    <link href="https://itxia.github.io/soft/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+    <link href="https://itxia.github.io/soft/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="https://itxia.github.io/soft/css/syntax.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+     fancybox: true, 
+    motion: true
+  };
+</script>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<div class="container one-collumn sidebar-position-left page-home  ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-meta  custom-logo ">
+
+  <div class="custom-logo-site-title">
+    <a href="https://itxia.github.io/soft/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">IT侠的博客</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">For 软件教学系列</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+    <ul id="menu" class="menu">
+      
+      
+        <li class="menu-item ">
+          <a href="https://itxia.github.io/soft/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://itxia.github.io/soft/categories/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-folder"></i> <br />分类
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://itxia.github.io/soft/tags/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="https://itxia.github.io/soft/post/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档
+          </a>
+        </li>
+      
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger"> <i class="menu-item-icon fa fa-search fa-fw"></i> <br /> 搜索</a>
+      </li>
+    </ul>
+    <div class="site-search">
+      <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+    </div>
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+
+
+            
+<div class="content-wrap">
+    <div id="content" class="content">
+<section id="posts" class="posts-expand">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <div class="post-block" style="opacity: 1; display: block;">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link" href="https://itxia.github.io/soft/post/UseFTP/" itemprop="url">
+        FTP使用教程(及其它零碎问题解答?)
+        </a>
+      </h1>
+      <div class="post-meta">
+      <span class="post-time">
+<span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+</span>
+<span class="post-meta-item-text">时间：</span>
+<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2018-09-17">
+    2018-09-17
+</time>
+</span> 
+      
+
+  <span class="post-category" >
+  &nbsp; | &nbsp;
+  <span class="post-meta-item-icon">
+    <i class="fa fa-folder-o"></i>
+  </span>
+  <span class="post-meta-item-text">分类：</span>
+  
+    <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+      <a href="https://itxia.github.io/soft/categories/%E8%BD%AF%E4%BB%B6%E6%95%99%E5%AD%A6%E7%B3%BB%E5%88%97" itemprop="url" rel="index">
+        <span itemprop="name">软件教学系列</span>
+      </a>
+      &nbsp; 
+    </span>
+  
+</span>
+
+
+
+       <span>
+&nbsp; | &nbsp;
+<span class="post-meta-item-icon">
+    <i class="fa fa-eye"></i>
+</span>
+
+<span id="busuanzi_value_page_pv"></span> 阅读
+</span>
+
+      </div>
+    </header>
+    <div class="post-body" itemprop="articleBody">
+    <p>建议先看这一篇再去下<del>崽</del>载。</p>
+
+<h1 id="ftp使用教程">FTP使用教程</h1>
+
+<h2 id="简介">简介</h2>
+
+<p>FTP是File Transfer Protocol (文件传输协议) 的首字母缩写。顾名思义，它可以用来传输文件。本文所说的FTP特指校园网下的FTP。原因见下。
+相比其它的下载方式，校内FTP的最大优点就是一个字：<strong>快</strong>！这是因为使用了内网。亲测<strong>使用网线</strong>下载文件可以获得10Mb/s的起步价。历史上最快观察到80Mb/s的峰值速率。
+相比于紫荆需要分享率达标才能下载部分资源；相比与网盘的龟速，FTP的优点是显而易见的。当然，FTP也有其缺点，由于缺少专人维护，FTP上的资源可能很久不能更新，FTP服务器处于野生状态，地址可能会变化等等。<del>但是这并不能影响我用FTP啊。</del></p>
+
+<h2 id="ftp站点地址">FTP站点地址</h2>
+
+<ul>
+<li><a href="ftp://ftp.diisquare.com">diisquare</a> (匡院学术部维护，稳定) <code>ftp://ftp.diisquare.com</code></li>
+<li><a href="ftp://114.212.167.165">kymforum</a> (xy维护，<strong>相对</strong>稳定，内容较新较全) <code>ftp://114.212.167.165</code></li>
+</ul>
+
+<h2 id="使用方法">使用方法</h2>
+
+<h3 id="方法一-用-windows-资源管理器">方法一：用 Windows 资源管理器</h3>
+
+<p>你可以通过打开<code>此电脑</code>或任意一个文件夹来开启 Windows 资源管理器 (快捷键 <code>Windows + E</code>)。如图所示，(首先接上校园网，最好是网线) 在文件夹的地址栏输入FTP的地址，比如<code>ftp://114.212.167.165</code>，回车即可打开。
+<img src="https://itxia.github.io/soft/figure/ftp/InputAddress.png" alt="fig1:connect" />
+找到你想要下载的资源，比如图中的这个<code>KerbalSpaceProgram 文件夹</code>，复制；
+<img src="https://itxia.github.io/soft/figure/ftp/copy.png" alt="fig2:copy and download" />
+然后粘贴到自己的电脑里，等待下载即可。
+<img src="https://itxia.github.io/soft/figure/ftp/paste.png" alt="fig2:copy and download" /></p>
+
+<h3 id="方法二-用浏览器">方法二：用浏览器</h3>
+
+<p>大多数浏览器都可以打开FTP站点，以Chrome为例，在地址栏输入FTP的地址，回车打开，找到你想要下载的<strong>文件</strong>，右键下载即可。注意这个方法的缺点是不能下载一整个文件夹。
+<img src="https://itxia.github.io/soft/figure/ftp/download.png" alt="fig3:download" /></p>
+
+<h3 id="方法三-用下载工具">方法三：用下载工具</h3>
+
+<p>学校的基础计算机课程有个课程FTP站点用于下载课程资料和上传作业。老师让我们使用一些FTP工具，如<code>FileZilla</code>、<code>FlashFXP</code>来连接到FTP站点，由于<del>没有安装</del>年代久远，我就没截图。如果想用，下载安装即可，具体可以百度/谷歌。</p>
+
+<h1 id="一些小问题">一些小问题</h1>
+
+<h2 id="tracker">Tracker</h2>
+
+<p>官网在<a href="http://physlets.org/tracker/">这里</a>。</p>
+    </div>
+    <footer class="post-footer">
+     
+ 
+<div class="post-tags">     
+     
+    <a href="https://itxia.github.io/soft/tags/FTP" rel="tag" title="FTP">#FTP#</a>
+    
+</div>
+
+
+
+     <div class="post-nav">
+    <div class="post-nav-next post-nav-item">
+    
+        <a href="https://itxia.github.io/soft/post/InstallComsol/" rel="next" title="COMSOL Multiphysics 5.3a 安装教程">
+        <i class="fa fa-chevron-left"></i> COMSOL Multiphysics 5.3a 安装教程
+        </a>
+    
+    </div>
+
+    <div class="post-nav-prev post-nav-item">
+    
+        <a href="https://itxia.github.io/soft/post/InstallMMA/" rel="prev" title="安装Mathematica">
+        安装Mathematica <i class="fa fa-chevron-right"></i>
+        </a>
+    
+    </div>
+</div>
+      
+     
+     
+     
+     
+    </footer>
+  </div>
+  </article>
+</section>
+</div>
+</div>
+
+
+
+        <div class="sidebar-toggle">
+  <div class="sidebar-toggle-line-wrap">
+    <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+  </div>
+</div>
+<aside id="sidebar" class="sidebar">
+  <div class="sidebar-inner">
+
+    <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    
+    <p class="site-author-name" itemprop="name">ITxia &amp; More</p>
+    <p class="site-description motion-element" itemprop="description"> </p>
+</div>
+
+      <nav class="site-state motion-element">
+    <div class="site-state-item site-state-posts">
+      <a href="https://itxia.github.io/soft/post/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">日志</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">    
+        <a href="https://itxia.github.io/soft/categories/">      
+         
+        <span class="site-state-item-count">1</span>
+        
+        <span class="site-state-item-name">分类</span>
+        
+        </a>
+    </div>
+
+    <div class="site-state-item site-state-tags">
+        <a href="https://itxia.github.io/soft/tags/">
+         
+        <span class="site-state-item-count">9</span>
+        
+        <span class="site-state-item-name">标签</span>
+        </a>
+    </div>
+</nav>
+
+      
+
+      
+<div class="links-of-author motion-element">
+    
+        <span class="links-of-author-item">
+        <a href="https://github.com/itxia/" target="_blank" title="GitHub">
+            <i class="fa fa-fw fa-github"></i>
+            GitHub
+        </a>
+        </span>
+    
+</div>
+
+      
+      
+    </section>
+    
+  </div>
+</aside>
+
+      </div>
+    </main>
+   
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  <span itemprop="copyrightYear">  &copy; 
+  2017 - 2019</span>
+  <span class="with-love"><i class="fa fa-heart"></i></span>
+  <span class="author" itemprop="copyrightHolder">ITxia &amp; More</span>
+</div>
+<div class="powered-by">
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.55.4</a>
+</div>
+<div class="theme-info">
+  Theme by - <a class="theme-link" href="https://github.com/github-young/hugo-theme-next" target="_blank"> NexT
+  </a>
+</div>
+<br />
+<div class="theme-info">
+  <i class="fa fa-user">
+  </i>
+  <span class="busuanzi-value" id="busuanzi_value_site_uv">
+  <span id="busuanzi_value_site_uv"></span>
+  </span>
+&nbsp;
+  <i class="fa fa-eye">
+  </i>
+  <span class="busuanzi-value" id="busuanzi_value_site_pv">
+  <span id="busuanzi_value_site_pv"></span>
+  </span>
+</div>
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+      <span id="scrollpercent"><span>0</span>%</span>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+<script type="text/javascript" src="https://itxia.github.io/soft/js/vendor/jquery/index.js?v=2.1.3"></script>
+<script type="text/javascript" src="https://itxia.github.io/soft/js/vendor/fastclick/lib/fastclick.min.js?v=1.0.6"></script> 
+<script type="text/javascript" src="https://itxia.github.io/soft/js/vendor/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+<script type="text/javascript" src="https://itxia.github.io/soft/js/vendor/velocity/velocity.min.js?v=1.2.1"></script>
+<script type="text/javascript" src="https://itxia.github.io/soft/js/vendor/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="https://itxia.github.io/soft/js/vendor/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+
+<script src="https://itxia.github.io/soft/js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<script type="text/javascript" src="https://itxia.github.io/soft/js/utils.js"></script>
+<script type="text/javascript" src="https://itxia.github.io/soft/js/motion.js"></script>
+<script type="text/javascript" src="https://itxia.github.io/soft/js/affix.js"></script>
+<script type="text/javascript" src="https://itxia.github.io/soft/js/schemes/pisces.js"></script>
+
+<script type="text/javascript" src="https://itxia.github.io/soft/js/scrollspy.js"></script>
+<script type="text/javascript" src="https://itxia.github.io/soft/js/post-details.js"></script>
+<script type="text/javascript" src="https://itxia.github.io/soft/js/toc.js"></script>
+
+<script type="text/javascript" src="https://itxia.github.io/soft/js/bootstrap.js"></script>
+
+<script type="text/javascript" src="https://itxia.github.io/soft/js/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+              extensions: ["tex2jax.js"],
+                  jax: ["input/TeX", "output/HTML-CSS"],
+                      tex2jax: {
+                                    inlineMath: [ ['$','$'] ],
+                                          displayMath: [ ['$$','$$'] ],
+                                                processEscapes: true
+                                                    },
+                                                        "HTML-CSS": { fonts: ["TeX"] }
+                                                          });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+</body>
+</html>

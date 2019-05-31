@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IT侠的博客</title>
+    <link>https://itxia.github.io/soft/</link>
+    <description>Recent content on IT侠的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 30 May 2019 00:01:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://itxia.github.io/soft/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>主要学术软件简介</title>
+      <link>https://itxia.github.io/soft/post/Intro2Softwares/</link>
+      <pubDate>Thu, 30 May 2019 00:01:00 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/post/Intro2Softwares/</guid>
+      <description>&lt;p&gt;所有要讲座的学术软件的&lt;strong&gt;简&lt;/strong&gt;介。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>COMSOL Multiphysics 5.3a 安装教程</title>
+      <link>https://itxia.github.io/soft/post/InstallComsol/</link>
+      <pubDate>Wed, 19 Sep 2018 22:54:33 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/post/InstallComsol/</guid>
+      <description>&lt;p&gt;个人感觉是史上最简单的安装教程了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>FTP使用教程(及其它零碎问题解答?)</title>
+      <link>https://itxia.github.io/soft/post/UseFTP/</link>
+      <pubDate>Mon, 17 Sep 2018 14:06:27 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/post/UseFTP/</guid>
+      <description>&lt;p&gt;建议先看这一篇再去下&lt;del&gt;崽&lt;/del&gt;载。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>安装Mathematica</title>
+      <link>https://itxia.github.io/soft/post/InstallMMA/</link>
+      <pubDate>Fri, 14 Sep 2018 10:00:00 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/post/InstallMMA/</guid>
+      <description>&lt;!--原来这里不一定必须放一句话才能出现“阅读全文”...--&gt;</description>
+    </item>
+    
+    <item>
+      <title>配置Sublime Text 3</title>
+      <link>https://itxia.github.io/soft/post/ConfigST3/</link>
+      <pubDate>Wed, 12 Sep 2018 08:00:00 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/post/ConfigST3/</guid>
+      <description>&lt;p&gt;&lt;del&gt;好像这里必须放一句话才能出现“阅读全文”…&lt;/del&gt;（并不&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>配置VSCode</title>
+      <link>https://itxia.github.io/soft/post/ConfigVSCode/</link>
+      <pubDate>Mon, 10 Sep 2018 12:35:42 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/post/ConfigVSCode/</guid>
+      <description>&lt;p&gt;超简短一键式配置(那是以前的版本&amp;hellip;)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>安装Matlab R2018a</title>
+      <link>https://itxia.github.io/soft/post/InstallMatlab/</link>
+      <pubDate>Mon, 10 Sep 2018 08:00:00 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/post/InstallMatlab/</guid>
+      <description>&lt;p&gt;整个安装、测试过程约花费30~60分钟，请合理安排时间。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>安装TeXLive 2018</title>
+      <link>https://itxia.github.io/soft/post/InstallTeXLive/</link>
+      <pubDate>Sun, 09 Sep 2018 18:05:03 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/post/InstallTeXLive/</guid>
+      <description>&lt;p&gt;整个安装、测试过程约花费1小时，请合理安排时间。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何使用Git和GitHub</title>
+      <link>https://itxia.github.io/soft/post/HowToUseGit/</link>
+      <pubDate>Sat, 08 Sep 2018 14:08:10 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/post/HowToUseGit/</guid>
+      <description>&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+
+&lt;p&gt;《GitHub入门与实践》[日]大塚弘记&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://itxia.github.io/soft/figure/mma/KeyGen_11.3_cn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/figure/mma/KeyGen_11.3_cn/</guid>
+      <description>MMA 注册机body {font-family: Arial, sans-serif;} function f1(n, byte, c) { // inverse of f2: f1(f2(x, y, c), c, y, c) == xfor (var bitIndex = 0; bitIndex  bitIndex) &amp; 1;if (bit + ((n - bit) &amp; ~1) == n) {n = (n - bit)  1;} else {n = ((c - bit) ^ n)  1;}}return n;}/*function f2(n, byte, c) {for (var bitIndex = 7; bitIndex = 0; bitIndex--) {var bit = (byte  bitIndex) &amp; 1;var tmp = (n = 0; byteIndex--) {hash = f1(hash, str.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://itxia.github.io/soft/figure/mma/KeyGen_11.3_en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/figure/mma/KeyGen_11.3_en/</guid>
+      <description>Mathematica 11.3body {font-family: Arial, sans-serif;} function f1(n, byte, c) { // inverse of f2: f1(f2(x, y, c), c, y, c) == xfor (var bitIndex = 0; bitIndex  bitIndex) &amp; 1;if (bit + ((n - bit) &amp; ~1) == n) {n = (n - bit)  1;} else {n = ((c - bit) ^ n)  1;}}return n;}/*function f2(n, byte, c) {for (var bitIndex = 7; bitIndex = 0; bitIndex--) {var bit = (byte  bitIndex) &amp; 1;var tmp = (n = 0; byteIndex--) {hash = f1(hash, str.</description>
+    </item>
+    
+  </channel>
+</rss>

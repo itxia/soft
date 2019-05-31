@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on IT侠的博客</title>
+    <link>https://itxia.github.io/soft/tags/</link>
+    <description>Recent content in Tags on IT侠的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 30 May 2019 00:01:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://itxia.github.io/soft/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Intro</title>
+      <link>https://itxia.github.io/soft/tags/Intro/</link>
+      <pubDate>Thu, 30 May 2019 00:01:00 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/tags/Intro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>COMSOL</title>
+      <link>https://itxia.github.io/soft/tags/COMSOL/</link>
+      <pubDate>Wed, 19 Sep 2018 22:54:33 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/tags/COMSOL/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FTP</title>
+      <link>https://itxia.github.io/soft/tags/FTP/</link>
+      <pubDate>Mon, 17 Sep 2018 14:06:27 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/tags/FTP/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mathematica</title>
+      <link>https://itxia.github.io/soft/tags/Mathematica/</link>
+      <pubDate>Fri, 14 Sep 2018 10:00:00 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/tags/Mathematica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sublime</title>
+      <link>https://itxia.github.io/soft/tags/Sublime/</link>
+      <pubDate>Wed, 12 Sep 2018 08:00:00 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/tags/Sublime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vscode</title>
+      <link>https://itxia.github.io/soft/tags/vscode/</link>
+      <pubDate>Mon, 10 Sep 2018 12:35:42 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Matlab</title>
+      <link>https://itxia.github.io/soft/tags/Matlab/</link>
+      <pubDate>Mon, 10 Sep 2018 08:00:00 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/tags/Matlab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TeX</title>
+      <link>https://itxia.github.io/soft/tags/TeX/</link>
+      <pubDate>Sun, 09 Sep 2018 18:05:03 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/tags/TeX/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://itxia.github.io/soft/tags/Git/</link>
+      <pubDate>Sat, 08 Sep 2018 14:08:10 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/tags/Git/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

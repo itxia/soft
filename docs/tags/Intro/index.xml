@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intro on IT侠的博客</title>
+    <link>https://itxia.github.io/soft/tags/Intro/</link>
+    <description>Recent content in Intro on IT侠的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 30 May 2019 00:01:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://itxia.github.io/soft/tags/Intro/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>主要学术软件简介</title>
+      <link>https://itxia.github.io/soft/post/Intro2Softwares/</link>
+      <pubDate>Thu, 30 May 2019 00:01:00 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/post/Intro2Softwares/</guid>
+      <description>&lt;p&gt;所有要讲座的学术软件的&lt;strong&gt;简&lt;/strong&gt;介。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
