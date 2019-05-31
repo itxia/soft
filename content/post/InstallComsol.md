@@ -3,6 +3,7 @@ title: "COMSOL Multiphysics 5.3a 安装教程"
 date: 2018-09-19 22:54:33
 categories: ["软件教学系列"]
 tags: ["COMSOL"]
+toc: true
 ---
 
 个人感觉是史上最简单的安装教程了。

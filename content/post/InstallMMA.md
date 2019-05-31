@@ -3,6 +3,7 @@ title: "安装Mathematica"
 date: 2018-09-14 10:00:00
 categories: ["软件教学系列"]
 tags: ["Mathematica"]
+toc: true
 ---
 
 <!--原来这里不一定必须放一句话才能出现“阅读全文”...-->

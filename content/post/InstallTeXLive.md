@@ -3,6 +3,7 @@ title: "安装TeXLive 2018"
 date: 2018-09-09 18:05:03
 categories: ["软件教学系列"]
 tags: ["TeX"]
+toc: true
 ---
 
 整个安装、测试过程约花费1小时，请合理安排时间。

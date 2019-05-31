@@ -3,6 +3,7 @@ title: "配置Sublime Text 3"
 date: 2018-09-12 08:00:00
 categories: ["软件教学系列"]
 tags: ["Sublime"]
+toc: true
 ---
 
 ~~好像这里必须放一句话才能出现“阅读全文”…~~（并不

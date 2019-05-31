@@ -3,6 +3,7 @@ title: "安装Matlab R2018a"
 date: 2018-09-10 08:00:00
 categories: ["软件教学系列"]
 tags: ["Matlab"]
+toc: true
 ---
 
 整个安装、测试过程约花费30\~60分钟，请合理安排时间。

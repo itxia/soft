@@ -4,6 +4,7 @@ date: {{ .Date }}
 draft: false
 categories: ["软件教学系列"]
 tags: ["xxx"]
+toc: true
 ---
 
 ## 标题从2级开始

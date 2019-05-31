@@ -3,6 +3,7 @@ title: "配置VSCode"
 date: 2018-09-10 12:35:42
 categories: ["软件教学系列"]
 tags: [vscode]
+toc: true
 ---
 
 超简短一键式配置(那是以前的版本...)
