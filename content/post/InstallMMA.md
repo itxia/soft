@@ -63,7 +63,7 @@ toc: true
 
 ## 破解
 
-Mathematica 采用计算破解密钥的方式进行破解。破解需要的工具是注册机和刚刚安装的 Mathematica 软件。文中所用的注册机是一个 html 文件，可以在[这里](https://pan.baidu.com/s/129WG1EGo5jvm4i7N3-PG2A)下载到自己电脑，可以在大部分浏览器上打开、使用；或者，你也可以[**点这里直接打开**](/figure/mma/KeyGen_11.3_cn.html)。如果你电脑的浏览器因某些原因关闭了 JavaScript 支持，请改用手机浏览器、下载新的浏览器或重新开启 JavaScript 支持。
+Mathematica 采用计算破解密钥的方式进行破解。破解需要的工具是注册机和刚刚安装的 Mathematica 软件。文中所用的注册机是一个 html 文件，可以在[这里](https://pan.baidu.com/s/129WG1EGo5jvm4i7N3-PG2A)下载到自己电脑，可以在大部分浏览器上打开、使用；或者，你也可以[**点这里直接打开**](/figure/mma/KeyGen_11.3_cn/)。如果你电脑的浏览器因某些原因关闭了 JavaScript 支持，请改用手机浏览器、下载新的浏览器或重新开启 JavaScript 支持。
 
 安装后直接打开 Mathematica，会启动激活程序：
 
