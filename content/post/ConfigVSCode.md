@@ -50,7 +50,8 @@ VSCode，全称``Microsoft Visual Studio Code``，下文径称vscode(因为懒�
    ![fig5](/figure/vscode/5.png)
 
 1. 在出现的``用户设置``这个文件里，把以下内容复制粘贴进去，并保存(<b><font color='red'>注意：</font></b>如果打开的`` 用户设置 ``/`` settings.json ``文件是空白的，要先输入一对花括号`` {} ``，再把这段内容粘贴到花括号里面)：
-   ```json
+
+    ```json
    "latex-workshop.latex.magic.args": [
      "-synctex=1",
      "-interaction=nonstopmode",
