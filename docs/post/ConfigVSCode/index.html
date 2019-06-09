@@ -222,55 +222,53 @@
 <p><img src="https://itxia.github.io/soft/figure/vscode/5.png" alt="fig5" /></p>
 
 <ol>
-<li>在出现的<code>用户设置</code>这个文件里，把以下内容复制粘贴进去，并保存(<b><font color='red'>注意：</font></b>如果打开的<code>用户设置</code>/<code>settings.json</code>文件是空白的，要先输入一对花括号<code>{}</code>，再把这段内容粘贴到花括号里面)：
-<code>json
-&quot;latex-workshop.latex.magic.args&quot;: [
- &quot;-synctex=1&quot;,
- &quot;-interaction=nonstopmode&quot;,
- &quot;-file-line-error&quot;,
- &quot;-shell-escape&quot;,
- &quot;%DOCFILE%&quot;
-],
-&quot;latex-workshop.latex.recipes&quot;: [
+<li><p>在出现的<code>用户设置</code>这个文件里，把以下内容复制粘贴进去，并保存(<b><font color='red'>注意：</font></b>如果打开的<code>用户设置</code>/<code>settings.json</code>文件是空白的，要先输入一对花括号<code>{}</code>，再把这段内容粘贴到花括号里面)：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#e6db74">&#34;latex-workshop.latex.magic.args&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> [
+ <span style="color:#e6db74">&#34;-synctex=1&#34;</span>,
+ <span style="color:#e6db74">&#34;-interaction=nonstopmode&#34;</span>,
+ <span style="color:#e6db74">&#34;-file-line-error&#34;</span>,
+ <span style="color:#e6db74">&#34;-shell-escape&#34;</span>,
+ <span style="color:#e6db74">&#34;%DOCFILE%&#34;</span>
+]<span style="color:#960050;background-color:#1e0010">,</span>
+<span style="color:#e6db74">&#34;latex-workshop.latex.recipes&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> [
  {
-   &quot;name&quot;: &quot;xelatex&quot;,
-   &quot;tools&quot;: [
-     &quot;xelatex&quot;
+   <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;xelatex&#34;</span>,
+   <span style="color:#f92672">&#34;tools&#34;</span>: [
+     <span style="color:#e6db74">&#34;xelatex&#34;</span>
    ]
  },
  {
-   &quot;name&quot;: &quot;xelatex -&gt; bibtex -&gt; xelatex*2&quot;,
-   &quot;tools&quot;: [
-     &quot;xelatex&quot;,
-     &quot;bibtex&quot;,
-     &quot;xelatex&quot;,
-     &quot;xelatex&quot;
+   <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;xelatex -&gt; bibtex -&gt; xelatex*2&#34;</span>,
+   <span style="color:#f92672">&#34;tools&#34;</span>: [
+     <span style="color:#e6db74">&#34;xelatex&#34;</span>,
+     <span style="color:#e6db74">&#34;bibtex&#34;</span>,
+     <span style="color:#e6db74">&#34;xelatex&#34;</span>,
+     <span style="color:#e6db74">&#34;xelatex&#34;</span>
    ]
  }
-],
-&quot;latex-workshop.latex.tools&quot;: [
+]<span style="color:#960050;background-color:#1e0010">,</span>
+<span style="color:#e6db74">&#34;latex-workshop.latex.tools&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> [
  {
-   &quot;name&quot;: &quot;xelatex&quot;,
-   &quot;command&quot;: &quot;xelatex&quot;,
-   &quot;args&quot;: [
-     &quot;-synctex=1&quot;,
-     &quot;-interaction=nonstopmode&quot;,
-     &quot;-file-line-error&quot;,
-     &quot;-shell-escape&quot;,
-     &quot;-pdf&quot;,
-     &quot;%DOCFILE%&quot;
+   <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;xelatex&#34;</span>,
+   <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;xelatex&#34;</span>,
+   <span style="color:#f92672">&#34;args&#34;</span>: [
+     <span style="color:#e6db74">&#34;-synctex=1&#34;</span>,
+     <span style="color:#e6db74">&#34;-interaction=nonstopmode&#34;</span>,
+     <span style="color:#e6db74">&#34;-file-line-error&#34;</span>,
+     <span style="color:#e6db74">&#34;-shell-escape&#34;</span>,
+     <span style="color:#e6db74">&#34;-pdf&#34;</span>,
+     <span style="color:#e6db74">&#34;%DOCFILE%&#34;</span>
    ]
  },
  {
-   &quot;name&quot;: &quot;bibtex&quot;,
-   &quot;command&quot;: &quot;bibtex&quot;,
-   &quot;args&quot;: [
-     &quot;%DOCFILE%&quot;
+   <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;bibtex&#34;</span>,
+   <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;bibtex&#34;</span>,
+   <span style="color:#f92672">&#34;args&#34;</span>: [
+     <span style="color:#e6db74">&#34;%DOCFILE%&#34;</span>
    ]
  }
-],
-</code>
-<img src="https://itxia.github.io/soft/figure/vscode/6.png" alt="fig6" /></li>
+]<span style="color:#960050;background-color:#1e0010">,</span></code></pre></div>
+<p><img src="https://itxia.github.io/soft/figure/vscode/6.png" alt="fig6" /></p></li>
 </ol>
 
 <!--
