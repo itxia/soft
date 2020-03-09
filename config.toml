@@ -1,32 +1,28 @@
 Title =  "IT侠的博客"
-LanguageCode = "zh-CN"
 BaseUrl = "https://itxia.github.io/soft/"
 Theme =  "hugo-theme-next"
-MetaDataFormat =  "yaml"
-CanonifyUrls =  true
+
 BuildDrafts =  false
-PaginatePath =  "p"
-Paginate = 8
+CanonifyUrls =  true
+DefaultContentLanguage = "zh"
 DisablePathToLower =  true
 HasCJKLanguage = true
-PreserveTaxonomyNames = true
-UglyUrls = false
-PygmentsStyle = "monokai"
-pygmentsCodefences = true
-pygmentsCodefencesGuessSyntax = true
-DefaultContentLanguage = "zh"
+MetaDataFormat =  "yaml"
+LanguageCode = "zh-CN"
+PaginatePath =  "p"
+Paginate = 8
 
 [Params]
   Introduce = ""
   Description = "IT侠博客专为软件教学系列的文档"
   Keywords =  ""
   Subtitle = "For 软件教学系列"
-  Imglogo = "/img/logo.png"
+  Imglogo = "/img/github.ico"
   AuthorImg = false
   DateFormat = "2006-01-02"
   YearFormat = "2006年"
   MonthFormat = "01-02"
-  Fancybox = true
+  Fancybox = false
 
 [Author]
   Name = "ITxia & More"
@@ -60,3 +56,7 @@ DefaultContentLanguage = "zh"
   Icon = "github"
   URL = "https://github.com/itxia/"
 
+[markup]
+  [markup.highlight]
+    lineNos = true
+    style = "monokailight"

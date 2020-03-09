@@ -58,22 +58,23 @@ Enter same passphrase again: (按回车键)
 4. 测试是否关联成功
 输入：
 
-```shell
+```sh
 ssh -T git@github.com
 ```
 
 出现以下结果即为成功：
 
-```shell
+```
 Hi student! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
 ## 日常使用
 常用命令
 
-```shell
-git status 
-git add xxx #(. for all)
-git commit -m "xxxxxx"
-git push -u origin master
+```sh
+git status # 查看仓库状态
+git add xxx #(. for all) # 添加xxx/所有修改
+git commit -m "xxxxxx" # 提交修改
+# git remote add origin git@github.com:<student>/<repoName>.git # 如果是第一次向远程仓库推送则要执行这一步
+git push -u origin master # 向远程仓库推送
 ```
