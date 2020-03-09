@@ -12,14 +12,14 @@
     <meta property="og:image" content="/img/author.jpg"> 
     <meta name="title" content="COMSOL Multiphysics 5.3a 安装教程 - IT侠的博客" />
     <meta name="description" content="IT侠博客专为软件教学系列的文档"> 
-    
+    <link rel="alternate" href="https://itxia.github.io/soft/post/InstallComsol/" title="IT侠的博客" type="application/rss+xml" />
     
     <link rel="shortcut icon" href="https://itxia.github.io/soft/img/github.ico" />
     <link rel="apple-touch-icon" href="https://itxia.github.io/soft/img/github.png" />
     <link rel="apple-touch-icon-precomposed" href="https://itxia.github.io/soft/img/github.png" />
     
     <link href="https://itxia.github.io/soft/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-    <link href="https://itxia.github.io/soft/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+    
     <link href="https://itxia.github.io/soft/css/main.css" rel="stylesheet" type="text/css" />
     <link href="https://itxia.github.io/soft/css/syntax.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" id="hexo.configuration">
@@ -27,7 +27,7 @@
   var CONFIG = {
     scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
-     fancybox: true, 
+    fancybox: false, 
     motion: true
   };
 </script>
@@ -163,56 +163,62 @@
     </header>
     <div class="post-body" itemprop="articleBody">
     <p>个人感觉是史上最简单的安装教程了。</p>
-
 <h2 id="下载">下载</h2>
-
 <p>推荐使用校内FTP，详见<a href="https://itxia.github.io/soft/post/UseFTP/">这里</a>。</p>
-
 <h2 id="安装">安装</h2>
-
 <ol>
-<li><p>双击下载得到的<code>COMSOL53_dvd.iso</code>挂载，点击<code>Setup.exe</code>，若弹出类似“是否允许此应用对你的计算机进行修改”这样的提示，选择<code>确定</code>即可。如图所示。
-<img src="https://itxia.github.io/soft/figure/comsol/setup.png" alt="fig1: setup" /></p></li>
-
-<li><p>待COMSOL安装程序打开后，选择<code>简体中文</code>并点击<code>下一步</code>(下文不再强调点击下一步这个动作)。点击<code>新安装COMSOL 5.3</code>。如图所示。
-<img src="https://itxia.github.io/soft/figure/comsol/new_inst.png" alt="fig2:new" /></p></li>
-
-<li><p>出现如下图所示的画面时：
-<img src="https://itxia.github.io/soft/figure/comsol/select_lic1.png" alt="fig3.1:lic" /></p>
-
+<li>
+<p>双击下载得到的<code>COMSOL53_dvd.iso</code>挂载，点击<code>Setup.exe</code>，若弹出类似“是否允许此应用对你的计算机进行修改”这样的提示，选择<code>确定</code>即可。如图所示。
+<img src="https://itxia.github.io/soft/figure/comsol/setup.png" alt="fig1: setup"></p>
+</li>
+<li>
+<p>待COMSOL安装程序打开后，选择<code>简体中文</code>并点击<code>下一步</code>(下文不再强调点击下一步这个动作)。点击<code>新安装COMSOL 5.3</code>。如图所示。
+<img src="https://itxia.github.io/soft/figure/comsol/new_inst.png" alt="fig2:new"></p>
+</li>
+<li>
+<p>出现如下图所示的画面时：
+<img src="https://itxia.github.io/soft/figure/comsol/select_lic1.png" alt="fig3.1:lic"></p>
 <ul>
-<li>第一步：点击<code>我接受 ...</code></li>
+<li>第一步：点击<code>我接受 ... </code></li>
 <li>第二步：点击<code>许可证格式</code>后的下拉菜单，选择<code>许可证文件</code>。</li>
 <li>第三部：点击下一行的<code>浏览</code>，找到一同下载的文件夹中的<code>LMCOMSOL_Multiphysics_SSQ.lic</code>文件并确定。如下图所示。
-<img src="https://itxia.github.io/soft/figure/comsol/select_lic2.png" alt="fig3.2:lic2" /></li>
-</ul></li>
-
-<li><p>在这一步选择你需要安装的组件，一般地，全部勾选即可。在右侧可以选择安装的位置，你可以根据喜好修改。
-<img src="https://itxia.github.io/soft/figure/comsol/set_inst_path.png" alt="fig4:inst_path" /></p></li>
-
-<li><p>在这一步，需要确保<code>安装完成后检查更新</code>和<code>启用自动检测更新</code>前面的复选框<strong>不被勾选</strong>。其余选项可以根据个人喜好设置。
-<img src="https://itxia.github.io/soft/figure/comsol/disable_auto_update.png" alt="fig5:update" /></p></li>
-
-<li><p>在这一步设置<code>LiveLink</code>，这是COMSOL与其它软件，如<code>MATLAB</code>，进行协同工作的功能。如果已经安装了那些软件，你可以设置一下；没有安装也可以以后设置。因此如果不懂可以选择都不设置。
-<img src="https://itxia.github.io/soft/figure/comsol/livelink.png" alt="fig6:livelink" /></p></li>
-
-<li><p>检查无误即可开始安装，等待时间可以洗几件衣服。
-<img src="https://itxia.github.io/soft/figure/comsol/inst.png" alt="fig7:inst" /></p></li>
-
-<li><p>安装完成后，点击<code>关闭</code>即可。
-<img src="https://itxia.github.io/soft/figure/comsol/finish.png" alt="fig8:exit" /></p></li>
-
-<li><p>最后，不要忘了将挂载的iso文件弹出。在<code>此电脑</code>中<code>右键</code> - <code>弹出</code>即可，如图所示。
-<img src="https://itxia.github.io/soft/figure/comsol/eject.png" alt="fig9:eject" /></p></li>
+<img src="https://itxia.github.io/soft/figure/comsol/select_lic2.png" alt="fig3.2:lic2"></li>
+</ul>
+</li>
+<li>
+<p>在这一步选择你需要安装的组件，一般地，全部勾选即可。在右侧可以选择安装的位置，你可以根据喜好修改。
+<img src="https://itxia.github.io/soft/figure/comsol/set_inst_path.png" alt="fig4:inst_path"></p>
+</li>
+<li>
+<p>在这一步，需要确保<code>安装完成后检查更新</code>和<code>启用自动检测更新</code>前面的复选框<strong>不被勾选</strong>。其余选项可以根据个人喜好设置。
+<img src="https://itxia.github.io/soft/figure/comsol/disable_auto_update.png" alt="fig5:update"></p>
+</li>
+<li>
+<p>在这一步设置<code>LiveLink</code>，这是COMSOL与其它软件，如<code>MATLAB</code>，进行协同工作的功能。如果已经安装了那些软件，你可以设置一下；没有安装也可以以后设置。因此如果不懂可以选择都不设置。
+<img src="https://itxia.github.io/soft/figure/comsol/livelink.png" alt="fig6:livelink"></p>
+</li>
+<li>
+<p>检查无误即可开始安装，等待时间可以洗几件衣服。
+<img src="https://itxia.github.io/soft/figure/comsol/inst.png" alt="fig7:inst"></p>
+</li>
+<li>
+<p>安装完成后，点击<code>关闭</code>即可。
+<img src="https://itxia.github.io/soft/figure/comsol/finish.png" alt="fig8:exit"></p>
+</li>
+<li>
+<p>最后，不要忘了将挂载的iso文件弹出。在<code>此电脑</code>中<code>右键</code> - <code>弹出</code>即可，如图所示。
+<img src="https://itxia.github.io/soft/figure/comsol/eject.png" alt="fig9:eject"></p>
+</li>
 </ol>
-
 <p>至此安装完成。</p>
     </div>
     <footer class="post-footer">
      
- 
-<div class="post-tags">     
+
      
+ 
+<div class="post-tags">
+    
     <a href="https://itxia.github.io/soft/tags/COMSOL" rel="tag" title="COMSOL">#COMSOL#</a>
     
 </div>
@@ -304,6 +310,14 @@
 </nav>
 
       
+<div class="feed-link motion-element">
+        
+        <a href= rel="alternate" type="application/rss+xml" target="_blank">
+    <i class="fa fa-rss"></i>
+    RSS 订阅
+</a>
+</div>
+
 
       
 <div class="links-of-author motion-element">
@@ -317,20 +331,19 @@
     
 </div>
 
+
       
+
       
     </section>
     
 <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
     <div class="post-toc">
         <div class="post-toc-content"><nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#下载">下载</a></li>
-<li><a href="#安装">安装</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#下载">下载</a></li>
+    <li><a href="#安装">安装</a></li>
+  </ul>
 </nav></div>
     </div>
 </section>
@@ -345,15 +358,15 @@
       <div class="footer-inner">
         <div class="copyright" >
   <span itemprop="copyrightYear">  &copy; 
-  2017 - 2019</span>
+  2017 - 2020</span>
   <span class="with-love"><i class="fa fa-heart"></i></span>
   <span class="author" itemprop="copyrightHolder">ITxia &amp; More</span>
 </div>
 <div class="powered-by">
-  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.55.4</a>
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.65.3</a>
 </div>
 <div class="theme-info">
-  Theme by - <a class="theme-link" href="https://github.com/github-young/hugo-theme-next" target="_blank"> NexT
+  Theme by - <a class="theme-link" href="https://github.com/github-young/hugo-theme-next" target="_blank"> NexT.Gemini
   </a>
 </div>
 <br />
@@ -394,8 +407,6 @@
 <script type="text/javascript" src="https://itxia.github.io/soft/js/vendor/velocity/velocity.min.js?v=1.2.1"></script>
 <script type="text/javascript" src="https://itxia.github.io/soft/js/vendor/velocity/velocity.ui.min.js?v=1.2.1"></script>
 <script src="https://itxia.github.io/soft/js/vendor/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-
-<script src="https://itxia.github.io/soft/js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 <script type="text/javascript" src="https://itxia.github.io/soft/js/utils.js"></script>
 <script type="text/javascript" src="https://itxia.github.io/soft/js/motion.js"></script>

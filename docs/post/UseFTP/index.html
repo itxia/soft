@@ -12,14 +12,14 @@
     <meta property="og:image" content="/img/author.jpg"> 
     <meta name="title" content="FTP使用教程(及其它零碎问题解答?) - IT侠的博客" />
     <meta name="description" content="IT侠博客专为软件教学系列的文档"> 
-    
+    <link rel="alternate" href="https://itxia.github.io/soft/post/UseFTP/" title="IT侠的博客" type="application/rss+xml" />
     
     <link rel="shortcut icon" href="https://itxia.github.io/soft/img/github.ico" />
     <link rel="apple-touch-icon" href="https://itxia.github.io/soft/img/github.png" />
     <link rel="apple-touch-icon-precomposed" href="https://itxia.github.io/soft/img/github.png" />
     
     <link href="https://itxia.github.io/soft/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-    <link href="https://itxia.github.io/soft/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+    
     <link href="https://itxia.github.io/soft/css/main.css" rel="stylesheet" type="text/css" />
     <link href="https://itxia.github.io/soft/css/syntax.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" id="hexo.configuration">
@@ -27,7 +27,7 @@
   var CONFIG = {
     scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
-     fancybox: true, 
+    fancybox: false, 
     motion: true
   };
 </script>
@@ -163,53 +163,40 @@
     </header>
     <div class="post-body" itemprop="articleBody">
     <p>建议先看这一篇再去下<del>崽</del>载。</p>
-
 <h1 id="ftp使用教程">FTP使用教程</h1>
-
 <h2 id="简介">简介</h2>
-
 <p>FTP是File Transfer Protocol (文件传输协议) 的首字母缩写。顾名思义，它可以用来传输文件。本文所说的FTP特指校园网下的FTP。原因见下。
 相比其它的下载方式，校内FTP的最大优点就是一个字：<strong>快</strong>！这是因为使用了内网。亲测<strong>使用网线</strong>下载文件可以获得10Mb/s的起步价。历史上最快观察到80Mb/s的峰值速率。
 相比于紫荆需要分享率达标才能下载部分资源；相比与网盘的龟速，FTP的优点是显而易见的。当然，FTP也有其缺点，由于缺少专人维护，FTP上的资源可能很久不能更新，FTP服务器处于野生状态，地址可能会变化等等。<del>但是这并不能影响我用FTP啊。</del></p>
-
 <h2 id="ftp站点地址">FTP站点地址</h2>
-
 <ul>
 <li><a href="ftp://ftp.diisquare.com">diisquare</a> (匡院学术部维护，稳定) <code>ftp://ftp.diisquare.com</code></li>
 <li><a href="ftp://114.212.167.165">kymforum</a> (xy维护，<strong>相对</strong>稳定，内容较新较全) <code>ftp://114.212.167.165</code></li>
 </ul>
-
 <h2 id="使用方法">使用方法</h2>
-
-<h3 id="方法一-用-windows-资源管理器">方法一：用 Windows 资源管理器</h3>
-
+<h3 id="方法一用-windows-资源管理器">方法一：用 Windows 资源管理器</h3>
 <p>你可以通过打开<code>此电脑</code>或任意一个文件夹来开启 Windows 资源管理器 (快捷键 <code>Windows + E</code>)。如图所示，(首先接上校园网，最好是网线) 在文件夹的地址栏输入FTP的地址，比如<code>ftp://114.212.167.165</code>，回车即可打开。
-<img src="https://itxia.github.io/soft/figure/ftp/InputAddress.png" alt="fig1:connect" />
+<img src="https://itxia.github.io/soft/figure/ftp/InputAddress.png" alt="fig1:connect">
 找到你想要下载的资源，比如图中的这个<code>KerbalSpaceProgram 文件夹</code>，复制；
-<img src="https://itxia.github.io/soft/figure/ftp/copy.png" alt="fig2:copy and download" />
+<img src="https://itxia.github.io/soft/figure/ftp/copy.png" alt="fig2:copy and download">
 然后粘贴到自己的电脑里，等待下载即可。
-<img src="https://itxia.github.io/soft/figure/ftp/paste.png" alt="fig2:copy and download" /></p>
-
-<h3 id="方法二-用浏览器">方法二：用浏览器</h3>
-
+<img src="https://itxia.github.io/soft/figure/ftp/paste.png" alt="fig2:copy and download"></p>
+<h3 id="方法二用浏览器">方法二：用浏览器</h3>
 <p>大多数浏览器都可以打开FTP站点，以Chrome为例，在地址栏输入FTP的地址，回车打开，找到你想要下载的<strong>文件</strong>，右键下载即可。注意这个方法的缺点是不能下载一整个文件夹。
-<img src="https://itxia.github.io/soft/figure/ftp/download.png" alt="fig3:download" /></p>
-
-<h3 id="方法三-用下载工具">方法三：用下载工具</h3>
-
+<img src="https://itxia.github.io/soft/figure/ftp/download.png" alt="fig3:download"></p>
+<h3 id="方法三用下载工具">方法三：用下载工具</h3>
 <p>学校的基础计算机课程有个课程FTP站点用于下载课程资料和上传作业。老师让我们使用一些FTP工具，如<code>FileZilla</code>、<code>FlashFXP</code>来连接到FTP站点，由于<del>没有安装</del>年代久远，我就没截图。如果想用，下载安装即可，具体可以百度/谷歌。</p>
-
 <h1 id="一些小问题">一些小问题</h1>
-
 <h2 id="tracker">Tracker</h2>
-
 <p>官网在<a href="http://physlets.org/tracker/">这里</a>。</p>
     </div>
     <footer class="post-footer">
      
- 
-<div class="post-tags">     
+
      
+ 
+<div class="post-tags">
+    
     <a href="https://itxia.github.io/soft/tags/FTP" rel="tag" title="FTP">#FTP#</a>
     
 </div>
@@ -301,6 +288,14 @@
 </nav>
 
       
+<div class="feed-link motion-element">
+        
+        <a href= rel="alternate" type="application/rss+xml" target="_blank">
+    <i class="fa fa-rss"></i>
+    RSS 订阅
+</a>
+</div>
+
 
       
 <div class="links-of-author motion-element">
@@ -314,30 +309,30 @@
     
 </div>
 
+
       
+
       
     </section>
     
 <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
     <div class="post-toc">
         <div class="post-toc-content"><nav id="TableOfContents">
-<ul>
-<li><a href="#ftp使用教程">FTP使用教程</a>
-<ul>
-<li><a href="#简介">简介</a></li>
-<li><a href="#ftp站点地址">FTP站点地址</a></li>
-<li><a href="#使用方法">使用方法</a>
-<ul>
-<li><a href="#方法一-用-windows-资源管理器">方法一：用 Windows 资源管理器</a></li>
-<li><a href="#方法二-用浏览器">方法二：用浏览器</a></li>
-<li><a href="#方法三-用下载工具">方法三：用下载工具</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#一些小问题">一些小问题</a>
-<ul>
-<li><a href="#tracker">Tracker</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#简介">简介</a></li>
+    <li><a href="#ftp站点地址">FTP站点地址</a></li>
+    <li><a href="#使用方法">使用方法</a>
+      <ul>
+        <li><a href="#方法一用-windows-资源管理器">方法一：用 Windows 资源管理器</a></li>
+        <li><a href="#方法二用浏览器">方法二：用浏览器</a></li>
+        <li><a href="#方法三用下载工具">方法三：用下载工具</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#tracker">Tracker</a></li>
+  </ul>
 </nav></div>
     </div>
 </section>
@@ -352,15 +347,15 @@
       <div class="footer-inner">
         <div class="copyright" >
   <span itemprop="copyrightYear">  &copy; 
-  2017 - 2019</span>
+  2017 - 2020</span>
   <span class="with-love"><i class="fa fa-heart"></i></span>
   <span class="author" itemprop="copyrightHolder">ITxia &amp; More</span>
 </div>
 <div class="powered-by">
-  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.55.4</a>
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.65.3</a>
 </div>
 <div class="theme-info">
-  Theme by - <a class="theme-link" href="https://github.com/github-young/hugo-theme-next" target="_blank"> NexT
+  Theme by - <a class="theme-link" href="https://github.com/github-young/hugo-theme-next" target="_blank"> NexT.Gemini
   </a>
 </div>
 <br />
@@ -401,8 +396,6 @@
 <script type="text/javascript" src="https://itxia.github.io/soft/js/vendor/velocity/velocity.min.js?v=1.2.1"></script>
 <script type="text/javascript" src="https://itxia.github.io/soft/js/vendor/velocity/velocity.ui.min.js?v=1.2.1"></script>
 <script src="https://itxia.github.io/soft/js/vendor/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-
-<script src="https://itxia.github.io/soft/js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 <script type="text/javascript" src="https://itxia.github.io/soft/js/utils.js"></script>
 <script type="text/javascript" src="https://itxia.github.io/soft/js/motion.js"></script>

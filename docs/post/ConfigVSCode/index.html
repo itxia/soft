@@ -12,14 +12,14 @@
     <meta property="og:image" content="/img/author.jpg"> 
     <meta name="title" content="配置VSCode - IT侠的博客" />
     <meta name="description" content="IT侠博客专为软件教学系列的文档"> 
-    
+    <link rel="alternate" href="https://itxia.github.io/soft/post/ConfigVSCode/" title="IT侠的博客" type="application/rss+xml" />
     
     <link rel="shortcut icon" href="https://itxia.github.io/soft/img/github.ico" />
     <link rel="apple-touch-icon" href="https://itxia.github.io/soft/img/github.png" />
     <link rel="apple-touch-icon-precomposed" href="https://itxia.github.io/soft/img/github.png" />
     
     <link href="https://itxia.github.io/soft/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-    <link href="https://itxia.github.io/soft/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+    
     <link href="https://itxia.github.io/soft/css/main.css" rel="stylesheet" type="text/css" />
     <link href="https://itxia.github.io/soft/css/syntax.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" id="hexo.configuration">
@@ -27,7 +27,7 @@
   var CONFIG = {
     scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
-     fancybox: true, 
+    fancybox: false, 
     motion: true
   };
 </script>
@@ -163,180 +163,166 @@
     </header>
     <div class="post-body" itemprop="articleBody">
     <p>超简短一键式配置(那是以前的版本&hellip;)</p>
-
 <h1 id="vscode的安装与配置">VSCode的安装与配置</h1>
-
 <h2 id="概述">概述</h2>
-
 <p>VSCode，全称<code>Microsoft Visual Studio Code</code>，下文径称vscode(因为懒得打大写字母)，是一款微软公司出品的开源编辑器。它比IDE轻量，功能又比普通的文本编辑器强大，依赖丰富的插件实现足够胜任日常所需的功能。</p>
-
 <h2 id="下载">下载</h2>
-
 <p>到<a href="https://code.visualstudio.com/Download">vscode官网</a>下载对应你使用的系统的版本。下面我们以<code>Windows 10 64 bit</code>的<code>User Installer</code>为例。</p>
-
 <h2 id="安装">安装</h2>
-
 <p>双击下载得到的<code>VSCodeUsrSetup-xxx-xxx.exe</code>文件，一直点击下一步即可。安装完成后打开vscode。如图所示。
-<img src="https://itxia.github.io/soft/figure/vscode/1.png" alt="fig1" /></p>
-
-<h2 id="配置-仅以latex为例">配置（仅以LaTeX为例）</h2>
-
-<h3 id="设置中文界面-非必须">设置中文界面（非必须）</h3>
-
+<img src="https://itxia.github.io/soft/figure/vscode/1.png" alt="fig1"></p>
+<h2 id="配置仅以latex为例">配置（仅以LaTeX为例）</h2>
+<h3 id="设置中文界面非必须">设置中文界面（非必须）</h3>
 <ol>
-<li>点击上图左侧红框处的按钮(或者按快捷键：<code>Ctrl+Shift+X</code>)，打开扩展页面。在搜索框里输入<code>Chinese</code>，找到如图所示的中文语言包，选择<code>Install</code>等待安装。</li>
+<li>
+<p>点击上图左侧红框处的按钮(或者按快捷键：<code>Ctrl+Shift+X</code>)，打开扩展页面。在搜索框里输入<code>Chinese</code>，找到如图所示的中文语言包，选择<code>Install</code>等待安装。</p>
+<p><img src="https://itxia.github.io/soft/figure/vscode/zh1.png" alt="fig_zh1"></p>
+</li>
+<li>
+<p>安装完毕会出现如下图的提示，点击<code>Restart Now</code>即可。如果发现界面还是英文，那么就参照上图中红框里的<code>使用方法</code>进行设置。</p>
+<p><img src="https://itxia.github.io/soft/figure/vscode/zh2.png" alt="fig_zh2"></p>
+</li>
+<li>
+<p>其中文界面如下图所示：</p>
+<p><img src="https://itxia.github.io/soft/figure/vscode/zh3.png" alt="fig_zh3"></p>
+</li>
 </ol>
-
-<p><img src="https://itxia.github.io/soft/figure/vscode/zh1.png" alt="fig_zh1" /></p>
-
+<h3 id="安装配置latex-workshop插件">安装配置<code>LaTeX Workshop</code>插件</h3>
 <ol>
-<li>安装完毕会出现如下图的提示，点击<code>Restart Now</code>即可。如果发现界面还是英文，那么就参照上图中红框里的<code>使用方法</code>进行设置。</li>
+<li>
+<p>再次点击<code>扩展</code>按钮，在搜索框中输入<code>LaTeX Workshop</code>，选择如图所示的插件，点击安装。(请无视这里的界面语言，因为截屏的顺序不同)。</p>
+<p><img src="https://itxia.github.io/soft/figure/vscode/3.png" alt="fig3"></p>
+</li>
+<li>
+<p>安装完毕，出现提示<code>Reload/重新加载</code>，点击即可。</p>
+<p><img src="https://itxia.github.io/soft/figure/vscode/4.png" alt="fig4"></p>
+</li>
+<li>
+<p>按快捷键<code>Ctrl+Shift+P</code>，打开命令面板(这也以后极为常用的快捷键，要记住)。输入<code>settings</code>，在出现的候选列表里点击<code>首选项：打开设置 (JSON)</code>或<code>Preferences: Open Settings (JSON)</code>，如图所示：</p>
+<p><img src="https://itxia.github.io/soft/figure/vscode/5.png" alt="fig5"></p>
+</li>
+<li>
+<p>在出现的<code>用户设置</code>这个文件里，把以下内容复制粘贴进去，并保存(<!-- raw HTML omitted --><!-- raw HTML omitted -->注意：<!-- raw HTML omitted --><!-- raw HTML omitted -->如果打开的<code>用户设置</code>/<code>settings.json</code>文件是空白的，要先输入一对花括号<code>{}</code>，再把这段内容粘贴到花括号里面；如果不是空白的，比如已经有了一对花括号和几行文字，请在第一个花括号后面粘贴。如有任何格式问题如逗号，vscode会提示的。)：</p>
+<div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#d88200">&#34;latex-workshop.latex.recipes&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#111">[</span>
+ <span style="color:#111">{</span>
+   <span style="color:#f92672">&#34;name&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;xelatex&#34;</span><span style="color:#111">,</span>
+   <span style="color:#f92672">&#34;tools&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+     <span style="color:#d88200">&#34;xelatex&#34;</span>
+   <span style="color:#111">]</span>
+ <span style="color:#111">},</span>
+ <span style="color:#111">{</span>
+   <span style="color:#f92672">&#34;name&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;xelatex -&gt; bibtex -&gt; xelatex*2&#34;</span><span style="color:#111">,</span>
+   <span style="color:#f92672">&#34;tools&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+     <span style="color:#d88200">&#34;xelatex&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;bibtex&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;xelatex&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;xelatex&#34;</span>
+   <span style="color:#111">]</span>
+ <span style="color:#111">}</span>
+<span style="color:#111">]</span><span style="color:#960050;background-color:#1e0010">,</span>
+<span style="color:#d88200">&#34;latex-workshop.latex.tools&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#111">[</span>
+ <span style="color:#111">{</span>
+   <span style="color:#f92672">&#34;name&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;xelatex&#34;</span><span style="color:#111">,</span>
+   <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;xelatex&#34;</span><span style="color:#111">,</span>
+   <span style="color:#f92672">&#34;args&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+     <span style="color:#d88200">&#34;-synctex=1&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;-interaction=nonstopmode&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;-file-line-error&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;-shell-escape&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;-pdf&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;%DOCFILE%&#34;</span>
+   <span style="color:#111">]</span>
+ <span style="color:#111">},</span>
+ <span style="color:#111">{</span>
+   <span style="color:#f92672">&#34;name&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;bibtex&#34;</span><span style="color:#111">,</span>
+   <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;bibtex&#34;</span><span style="color:#111">,</span>
+   <span style="color:#f92672">&#34;args&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+     <span style="color:#d88200">&#34;%DOCFILE%&#34;</span>
+   <span style="color:#111">]</span>
+ <span style="color:#111">}</span>
+<span style="color:#111">]</span><span style="color:#960050;background-color:#1e0010">,</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><img src="https://itxia.github.io/soft/figure/vscode/6.png" alt="fig6"></p>
+</li>
 </ol>
-
-<p><img src="https://itxia.github.io/soft/figure/vscode/zh2.png" alt="fig_zh2" /></p>
-
-<ol>
-<li>其中文界面如下图所示：</li>
-</ol>
-
-<p><img src="https://itxia.github.io/soft/figure/vscode/zh3.png" alt="fig_zh3" /></p>
-
-<h3 id="安装配置-latex-workshop-插件">安装配置<code>LaTeX Workshop</code>插件</h3>
-
-<ol>
-<li>再次点击<code>扩展</code>按钮，在搜索框中输入<code>LaTeX Workshop</code>，选择如图所示的插件，点击安装。(请无视这里的界面语言，因为截屏的顺序不同)。</li>
-</ol>
-
-<p><img src="https://itxia.github.io/soft/figure/vscode/3.png" alt="fig3" /></p>
-
-<ol>
-<li>安装完毕，出现提示<code>Reload/重新加载</code>，点击即可。</li>
-</ol>
-
-<p><img src="https://itxia.github.io/soft/figure/vscode/4.png" alt="fig4" /></p>
-
-<ol>
-<li>按快捷键<code>Ctrl+Shift+P</code>，打开命令面板(这也以后极为常用的快捷键，要记住)。输入<code>settings</code>，在出现的候选列表里点击<code>首选项：打开设置 (JSON)</code>或<code>Preferences: Open Settings (JSON)</code>，如图所示：</li>
-</ol>
-
-<p><img src="https://itxia.github.io/soft/figure/vscode/5.png" alt="fig5" /></p>
-
-<ol>
-<li><p>在出现的<code>用户设置</code>这个文件里，把以下内容复制粘贴进去，并保存(<b><font color='red'>注意：</font></b>如果打开的<code>用户设置</code>/<code>settings.json</code>文件是空白的，要先输入一对花括号<code>{}</code>，再把这段内容粘贴到花括号里面；如果不是空白的，比如已经有了一对花括号和几行文字，请在第一个花括号后面粘贴。如有任何格式问题如逗号，vscode会提示的。)：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#e6db74">&#34;latex-workshop.latex.recipes&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> [
- {
-   <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;xelatex&#34;</span>,
-   <span style="color:#f92672">&#34;tools&#34;</span>: [
-     <span style="color:#e6db74">&#34;xelatex&#34;</span>
-   ]
- },
- {
-   <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;xelatex -&gt; bibtex -&gt; xelatex*2&#34;</span>,
-   <span style="color:#f92672">&#34;tools&#34;</span>: [
-     <span style="color:#e6db74">&#34;xelatex&#34;</span>,
-     <span style="color:#e6db74">&#34;bibtex&#34;</span>,
-     <span style="color:#e6db74">&#34;xelatex&#34;</span>,
-     <span style="color:#e6db74">&#34;xelatex&#34;</span>
-   ]
- }
-]<span style="color:#960050;background-color:#1e0010">,</span>
-<span style="color:#e6db74">&#34;latex-workshop.latex.tools&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> [
- {
-   <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;xelatex&#34;</span>,
-   <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;xelatex&#34;</span>,
-   <span style="color:#f92672">&#34;args&#34;</span>: [
-     <span style="color:#e6db74">&#34;-synctex=1&#34;</span>,
-     <span style="color:#e6db74">&#34;-interaction=nonstopmode&#34;</span>,
-     <span style="color:#e6db74">&#34;-file-line-error&#34;</span>,
-     <span style="color:#e6db74">&#34;-shell-escape&#34;</span>,
-     <span style="color:#e6db74">&#34;-pdf&#34;</span>,
-     <span style="color:#e6db74">&#34;%DOCFILE%&#34;</span>
-   ]
- },
- {
-   <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;bibtex&#34;</span>,
-   <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;bibtex&#34;</span>,
-   <span style="color:#f92672">&#34;args&#34;</span>: [
-     <span style="color:#e6db74">&#34;%DOCFILE%&#34;</span>
-   ]
- }
-]<span style="color:#960050;background-color:#1e0010">,</span></code></pre></div>
-<p><img src="https://itxia.github.io/soft/figure/vscode/6.png" alt="fig6" /></p></li>
-</ol>
-
-<!--
-## 配置
-为了方便广大同学，避免繁琐的手动配置，我将借助``syncing``插件自动化完成配置过程。
-
-1. 先点击左侧``Extensions``按钮，在搜索框中输入``syncing``，点击出现的第一个插件，确认与图中无误后，点击``Install``，等待插件安装完成。如下图所示。
-
-![fig2](/figure/vscode/2_inst_syncing.png)
-
-2. 此插件安装完成后，点击图中所示的``Reload``，等待vscode重新加载。
-
-![fig3](/figure/vscode/3_reload_syncing.png)
-
-3. Reload完成后，按快捷键：``Ctrl+Shift+P``，出现一个悬浮的命令窗口，输入``syncing``，选择出现的``Syncing: Download Settings``。如下图所示。
-
-![fig4](/figure/vscode/4_syncing_dl.png)
-
-4. 出现如图所示的``Enter GitHub Personal Access Token ... ``时直接按回车：
-
-![fig5](/figure/vscode/5_syncing_token.png)
-
-5. 出现如图所示的``Enter Gist ID``时，将这一串字符``9a5d7c4bd7242257bab8a3e6554989f1``复制粘贴进去，回车：
-
-![fig6](/figure/vscode/6_syncing_gist.png)
-
-6. 回车之后，界面右下角可能会出现如图所示的确认信息，只要点击``Confirm to download``即可。界面左下角可以看到``syncing``插件已经在工作了，会有下载的进度提示。
-
-![fig7](/figure/vscode/7_syncing_confirm.png)
-
-7. 当进度提示下载完成，界面右下角会弹出如图所示的提示，点击``Reload Now``，等待vscode重新加载即可。
-
-![fig8](/figure/vscode/8_syncing_reload.png)
-
-8. 重新加载完成后，vscode的界面就大概是这样，熟悉的中文界面！如果没有变成中文界面，请**退出**vscode再打开。
-
-![fig9](/figure/vscode/9_final.png)
-
-9. 还有一件事(不是必须的，如果你电脑上没有python那就不用进行这一步了)，我的配置文件里的python路径是我自己的电脑上的，如果你的电脑上的python路径与我的不同(~~嘤~~该是显然的)，那还需要单独修改一下python的路径。步骤如下：
-   (1) 按快捷键``Ctrl+Shift+P``，输入``settings``，点击出现的``首选项：打开设置(JSON)``。如图所示。
-   (2) 在右半边``用户设置``里面找到如图所示的python路径，把红框里的路径修改为你电脑上``python.exe``的路径。如果是``Windows``用户，记得把``\``改成``\\``。
-
-![fig10](/figure/vscode/10_modify_PythonPath.png)
--->
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p>至此就配置完成啦。</p>
-
 <h2 id="测试">测试</h2>
-
 <ol>
-<li><p>在Vscode里打开一个文件夹(快捷键：<code>Ctrl+k</code>再按<code>Ctrl+o</code>)，如图所示：
-<img src="https://itxia.github.io/soft/figure/vscode/7.png" alt="fig7" /></p></li>
-
-<li><p>新建一个tex文件或者打开你已有的tex文件，写一些内容。你会发现，当检测到编辑的是tex文件时，vscode的左侧出现了一个<code>TEX</code>的按钮，点击它就会出现一些tex工具，方便编译、查看pdf等操作。不过，通常来讲，我更喜欢把左侧的这些栏隐藏。在如图所示的菜单里可以设置隐藏和显示。
-<img src="https://itxia.github.io/soft/figure/vscode/10.png" alt="fig10" /></p></li>
-
-<li><p>tex文件写完准备编译。按下快捷键 <code>Ctrl+Shift+P</code>输入 <code>LaTeX Workshop: Build</code>，会看到如图所示的两个选项。<b><font color='blue'>首次</font></b>编译时，选择<code>Build with recipe</code>：
-<img src="https://itxia.github.io/soft/figure/vscode/buildwith.png" alt="build with recipe" />
+<li>
+<p>在Vscode里打开一个文件夹(快捷键：<code>Ctrl+k</code>再按<code>Ctrl+o</code>)，如图所示：
+<img src="https://itxia.github.io/soft/figure/vscode/7.png" alt="fig7"></p>
+</li>
+<li>
+<p>新建一个tex文件或者打开你已有的tex文件，写一些内容。你会发现，当检测到编辑的是tex文件时，vscode的左侧出现了一个<code>TEX</code>的按钮，点击它就会出现一些tex工具，方便编译、查看pdf等操作。不过，通常来讲，我更喜欢把左侧的这些栏隐藏。在如图所示的菜单里可以设置隐藏和显示。
+<img src="https://itxia.github.io/soft/figure/vscode/10.png" alt="fig10"></p>
+</li>
+<li>
+<p>tex文件写完准备编译。按下快捷键 <code>Ctrl+Shift+P</code>输入 <code>LaTeX Workshop: Build</code>，会看到如图所示的两个选项。<!-- raw HTML omitted --><!-- raw HTML omitted -->首次<!-- raw HTML omitted --><!-- raw HTML omitted -->编译时，选择<code>Build with recipe</code>：
+<img src="https://itxia.github.io/soft/figure/vscode/buildwith.png" alt="build with recipe">
 一般情况下选择第一个 <code>xelatex</code>即可；如果需要<strong>生成或重新生成</strong>引用文献的条目(即bibliography)，则选择第二个 <code>xelatex -&gt; bibtex -&gt; xelatex*2</code>：
-<img src="https://itxia.github.io/soft/figure/vscode/recipes.png" alt="recipes" />
-这样操作后，vscode就记住了你的编译偏好，下次编译时可以直接选择<code>Build LaTeX project</code>或者按它对应的快捷键了。</p></li>
-
-<li><p>我正常使用的时候喜欢vscode和SumatraPDF各占一半。使用<code>Ctrl+Shift+P</code>输入<code>LaTeX Workshop</code>可以查看和LaTeX相关的各个命令及快捷键，如图所示。编译的快捷键是<code>Ctrl+L Alt+B</code>，<code>L Alt</code>表示左侧的<code>Alt</code>键。
-<img src="https://itxia.github.io/soft/figure/vscode/11.png" alt="fig11" /></p></li>
+<img src="https://itxia.github.io/soft/figure/vscode/recipes.png" alt="recipes">
+这样操作后，vscode就记住了你的编译偏好，下次编译时可以直接选择<code>Build LaTeX project</code>或者按它对应的快捷键了。</p>
+</li>
+<li>
+<p>我正常使用的时候喜欢vscode和SumatraPDF各占一半。使用<code>Ctrl+Shift+P</code>输入<code>LaTeX Workshop</code>可以查看和LaTeX相关的各个命令及快捷键，如图所示。编译的快捷键是<code>Ctrl+L Alt+B</code>，<code>L Alt</code>表示左侧的<code>Alt</code>键。
+<img src="https://itxia.github.io/soft/figure/vscode/11.png" alt="fig11"></p>
+</li>
 </ol>
-
 <p>vscode有很多快捷键，你可以在<code>文件(F)</code> - <code>首选项(P)</code> - <code>键盘快捷方式</code>中查看。</p>
-
-<p><center>~~Author: Yang Xu~~</center></p>
+<!-- raw HTML omitted -->
     </div>
     <footer class="post-footer">
      
- 
-<div class="post-tags">     
+
      
+ 
+<div class="post-tags">
+    
     <a href="https://itxia.github.io/soft/tags/vscode" rel="tag" title="vscode">#vscode#</a>
     
 </div>
@@ -428,6 +414,14 @@
 </nav>
 
       
+<div class="feed-link motion-element">
+        
+        <a href= rel="alternate" type="application/rss+xml" target="_blank">
+    <i class="fa fa-rss"></i>
+    RSS 订阅
+</a>
+</div>
+
 
       
 <div class="links-of-author motion-element">
@@ -441,27 +435,27 @@
     
 </div>
 
+
       
+
       
     </section>
     
 <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
     <div class="post-toc">
         <div class="post-toc-content"><nav id="TableOfContents">
-<ul>
-<li><a href="#vscode的安装与配置">VSCode的安装与配置</a>
-<ul>
-<li><a href="#概述">概述</a></li>
-<li><a href="#下载">下载</a></li>
-<li><a href="#安装">安装</a></li>
-<li><a href="#配置-仅以latex为例">配置（仅以LaTeX为例）</a>
-<ul>
-<li><a href="#设置中文界面-非必须">设置中文界面（非必须）</a></li>
-<li><a href="#安装配置-latex-workshop-插件">安装配置<code>LaTeX Workshop</code>插件</a></li>
-</ul></li>
-<li><a href="#测试">测试</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#概述">概述</a></li>
+    <li><a href="#下载">下载</a></li>
+    <li><a href="#安装">安装</a></li>
+    <li><a href="#配置仅以latex为例">配置（仅以LaTeX为例）</a>
+      <ul>
+        <li><a href="#设置中文界面非必须">设置中文界面（非必须）</a></li>
+        <li><a href="#安装配置latex-workshop插件">安装配置<code>LaTeX Workshop</code>插件</a></li>
+      </ul>
+    </li>
+    <li><a href="#测试">测试</a></li>
+  </ul>
 </nav></div>
     </div>
 </section>
@@ -476,15 +470,15 @@
       <div class="footer-inner">
         <div class="copyright" >
   <span itemprop="copyrightYear">  &copy; 
-  2017 - 2019</span>
+  2017 - 2020</span>
   <span class="with-love"><i class="fa fa-heart"></i></span>
   <span class="author" itemprop="copyrightHolder">ITxia &amp; More</span>
 </div>
 <div class="powered-by">
-  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.55.4</a>
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.65.3</a>
 </div>
 <div class="theme-info">
-  Theme by - <a class="theme-link" href="https://github.com/github-young/hugo-theme-next" target="_blank"> NexT
+  Theme by - <a class="theme-link" href="https://github.com/github-young/hugo-theme-next" target="_blank"> NexT.Gemini
   </a>
 </div>
 <br />
@@ -525,8 +519,6 @@
 <script type="text/javascript" src="https://itxia.github.io/soft/js/vendor/velocity/velocity.min.js?v=1.2.1"></script>
 <script type="text/javascript" src="https://itxia.github.io/soft/js/vendor/velocity/velocity.ui.min.js?v=1.2.1"></script>
 <script src="https://itxia.github.io/soft/js/vendor/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-
-<script src="https://itxia.github.io/soft/js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 <script type="text/javascript" src="https://itxia.github.io/soft/js/utils.js"></script>
 <script type="text/javascript" src="https://itxia.github.io/soft/js/motion.js"></script>

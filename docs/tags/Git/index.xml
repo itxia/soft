@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on IT侠的博客</title>
@@ -18,7 +18,6 @@
       
       <guid>https://itxia.github.io/soft/post/HowToUseGit/</guid>
       <description>&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
-
 &lt;p&gt;《GitHub入门与实践》[日]大塚弘记&lt;/p&gt;</description>
     </item>
     

@@ -12,14 +12,14 @@
     <meta property="og:image" content="/img/author.jpg"> 
     <meta name="title" content="如何使用Git和GitHub - IT侠的博客" />
     <meta name="description" content="IT侠博客专为软件教学系列的文档"> 
-    
+    <link rel="alternate" href="https://itxia.github.io/soft/post/HowToUseGit/" title="IT侠的博客" type="application/rss+xml" />
     
     <link rel="shortcut icon" href="https://itxia.github.io/soft/img/github.ico" />
     <link rel="apple-touch-icon" href="https://itxia.github.io/soft/img/github.png" />
     <link rel="apple-touch-icon-precomposed" href="https://itxia.github.io/soft/img/github.png" />
     
     <link href="https://itxia.github.io/soft/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-    <link href="https://itxia.github.io/soft/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+    
     <link href="https://itxia.github.io/soft/css/main.css" rel="stylesheet" type="text/css" />
     <link href="https://itxia.github.io/soft/css/syntax.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" id="hexo.configuration">
@@ -27,7 +27,7 @@
   var CONFIG = {
     scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
-     fancybox: true, 
+    fancybox: false, 
     motion: true
   };
 </script>
@@ -163,70 +163,119 @@
     </header>
     <div class="post-body" itemprop="articleBody">
     <h2 id="参考">参考</h2>
-
 <p>《GitHub入门与实践》[日]大塚弘记</p>
-
 <h2 id="安装git">安装Git</h2>
-
 <ol>
 <li>到<a href="https://git-scm.com/downloads">Git官网</a>下载与你正在使用的操作系统(本文以windows为例)相对应的文件。一般地，选择<code>64-bit Git for Windows Setup</code>。</li>
 <li>安装时注意：勾选添加git到环境变量；在<code>Windows Explorer Integration</code>中勾选<code>Git Bash Here</code>。其余配置默认即可。</li>
 <li>安装完成后(可能需要注销或重启)，在任意一个文件夹空白处右键，检查是否有<code>Git Bash Here</code>的选项。</li>
 </ol>
-
 <h2 id="注册github">注册GitHub</h2>
-
 <ol>
 <li>到<a href="https://github.com">GitHub官网</a>注册一个账号，为方便下文举例，我们取邮箱为<code>test@smail.nju.edu.cn</code>，用户名为<code>student</code>。</li>
 </ol>
-
 <h2 id="配置git与github关联">配置git与github关联</h2>
-
 <ol>
 <li>设置邮箱和用户名
 打开<code>Git Bash</code>(输入命令均在Git Bash中进行，以后不再声明)，分别输入下列命令(输入一行命令后需要回车，以后不再声明)：</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git config --global user.name <span style="color:#e6db74">&#34;student&#34;</span>
-git config --global user.email <span style="color:#e6db74">&#34;test@smail.nju.edu.cn&#34;</span></code></pre></div>
-<p>下面这一行设置可以增强输出命令的可读性：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git config --global color.ui auto</code></pre></div>
-<ol>
+<div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git config --global user.name <span style="color:#d88200">&#34;student&#34;</span>
+git config --global user.email <span style="color:#d88200">&#34;test@smail.nju.edu.cn&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>下面这一行设置可以增强输出命令的可读性：</p>
+<div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git config --global color.ui auto
+</code></pre></td></tr></table>
+</div>
+</div><ol start="2">
 <li>用ssh生成公钥
 输入：</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ssh-keygen -t rsa -C <span style="color:#e6db74">&#34;test@smail.nju.edu.cn&#34;</span></code></pre></div>
-<p>回车之后会出现如下所示的输出，直接按回车即可：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Generating public/private rsa key pair.
+<div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ssh-keygen -t rsa -C <span style="color:#d88200">&#34;test@smail.nju.edu.cn&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>回车之后会出现如下所示的输出，直接按回车即可：</p>
+<div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Generating public/private rsa key pair.
 Enter file in which to save the key
 <span style="color:#f92672">(</span>/Users/your_user_directory/.ssh/id_rsa<span style="color:#f92672">)</span>: <span style="color:#f92672">(</span>按回车键<span style="color:#f92672">)</span>
-Enter passphrase <span style="color:#f92672">(</span>empty <span style="color:#66d9ef">for</span> no passphrase<span style="color:#f92672">)</span>: <span style="color:#f92672">(</span>按回车键<span style="color:#f92672">)</span>
-Enter same passphrase again: <span style="color:#f92672">(</span>按回车键<span style="color:#f92672">)</span></code></pre></div>
-<p>这样密钥文件就生成了，默认在用户目录下，如：<code>C:\User\xxx\.ssh\</code>这个文件夹中。其中的xxx是你的windows用户名。</p>
-
-<ol>
-<li><p>将公钥添加到github中
+Enter passphrase <span style="color:#f92672">(</span>empty <span style="color:#00a8c8">for</span> no passphrase<span style="color:#f92672">)</span>: <span style="color:#f92672">(</span>按回车键<span style="color:#f92672">)</span>
+Enter same passphrase again: <span style="color:#f92672">(</span>按回车键<span style="color:#f92672">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>这样密钥文件就生成了，默认在用户目录下，如：<code>C:\User\xxx\.ssh\</code>这个文件夹中。其中的xxx是你的windows用户名。</p>
+<ol start="3">
+<li>
+<p>将公钥添加到github中
 (1). 在<code>C:\user\xxx\.ssh\</code>文件夹中找到<code>id_rsa.pub</code>这个文件，用文本编辑器(如记事本)打开，复制里面的所有内容。
-(2). 登陆github账号，点击头像旁的小三角展开，点击<code>settings</code>-<code>SSH and GPG keys</code>-<code>New SSH key</code>，在<code>Title</code>中取一个名字，<code>key</code>中粘贴你刚刚复制的内容。然后点击<code>Add SSH key</code>即可。</p></li>
-
-<li><p>测试是否关联成功
-输入：</p></li>
+(2). 登陆github账号，点击头像旁的小三角展开，点击<code>settings</code>-<code>SSH and GPG keys</code>-<code>New SSH key</code>，在<code>Title</code>中取一个名字，<code>key</code>中粘贴你刚刚复制的内容。然后点击<code>Add SSH key</code>即可。</p>
+</li>
+<li>
+<p>测试是否关联成功
+输入：</p>
+</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ssh -T git@github.com</code></pre></div>
-<p>出现以下结果即为成功：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Hi student! You<span style="color:#960050;background-color:#1e0010">&#39;</span>ve successfully authenticated, but GitHub does not provide shell access.</code></pre></div>
-<h2 id="日常使用">日常使用</h2>
-
+<div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh -T git@github.com
+</code></pre></td></tr></table>
+</div>
+</div><p>出现以下结果即为成功：</p>
+<pre><code>Hi student! You've successfully authenticated, but GitHub does not provide shell access.
+</code></pre><h2 id="日常使用">日常使用</h2>
 <p>常用命令</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git status 
-git add xxx <span style="color:#75715e">#(. for all)</span>
-git commit -m <span style="color:#e6db74">&#34;xxxxxx&#34;</span>
-git push -u origin master</code></pre></div>
+<div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git status <span style="color:#75715e"># 查看仓库状态</span>
+git add xxx <span style="color:#75715e">#(. for all) # 添加xxx/所有修改</span>
+git commit -m <span style="color:#d88200">&#34;xxxxxx&#34;</span> <span style="color:#75715e"># 提交修改</span>
+<span style="color:#75715e"># git remote add origin git@github.com:&lt;student&gt;/&lt;repoName&gt;.git # 如果是第一次向远程仓库推送则要执行这一步</span>
+git push -u origin master <span style="color:#75715e"># 向远程仓库推送</span>
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
     <footer class="post-footer">
      
- 
-<div class="post-tags">     
+
      
+ 
+<div class="post-tags">
+    
     <a href="https://itxia.github.io/soft/tags/Git" rel="tag" title="Git">#Git#</a>
     
 </div>
@@ -318,6 +367,14 @@ git push -u origin master</code></pre></div>
 </nav>
 
       
+<div class="feed-link motion-element">
+        
+        <a href= rel="alternate" type="application/rss+xml" target="_blank">
+    <i class="fa fa-rss"></i>
+    RSS 订阅
+</a>
+</div>
+
 
       
 <div class="links-of-author motion-element">
@@ -331,23 +388,22 @@ git push -u origin master</code></pre></div>
     
 </div>
 
+
       
+
       
     </section>
     
 <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
     <div class="post-toc">
         <div class="post-toc-content"><nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#参考">参考</a></li>
-<li><a href="#安装git">安装Git</a></li>
-<li><a href="#注册github">注册GitHub</a></li>
-<li><a href="#配置git与github关联">配置git与github关联</a></li>
-<li><a href="#日常使用">日常使用</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#参考">参考</a></li>
+    <li><a href="#安装git">安装Git</a></li>
+    <li><a href="#注册github">注册GitHub</a></li>
+    <li><a href="#配置git与github关联">配置git与github关联</a></li>
+    <li><a href="#日常使用">日常使用</a></li>
+  </ul>
 </nav></div>
     </div>
 </section>
@@ -362,15 +418,15 @@ git push -u origin master</code></pre></div>
       <div class="footer-inner">
         <div class="copyright" >
   <span itemprop="copyrightYear">  &copy; 
-  2017 - 2019</span>
+  2017 - 2020</span>
   <span class="with-love"><i class="fa fa-heart"></i></span>
   <span class="author" itemprop="copyrightHolder">ITxia &amp; More</span>
 </div>
 <div class="powered-by">
-  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.55.4</a>
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.65.3</a>
 </div>
 <div class="theme-info">
-  Theme by - <a class="theme-link" href="https://github.com/github-young/hugo-theme-next" target="_blank"> NexT
+  Theme by - <a class="theme-link" href="https://github.com/github-young/hugo-theme-next" target="_blank"> NexT.Gemini
   </a>
 </div>
 <br />
@@ -411,8 +467,6 @@ git push -u origin master</code></pre></div>
 <script type="text/javascript" src="https://itxia.github.io/soft/js/vendor/velocity/velocity.min.js?v=1.2.1"></script>
 <script type="text/javascript" src="https://itxia.github.io/soft/js/vendor/velocity/velocity.ui.min.js?v=1.2.1"></script>
 <script src="https://itxia.github.io/soft/js/vendor/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-
-<script src="https://itxia.github.io/soft/js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 <script type="text/javascript" src="https://itxia.github.io/soft/js/utils.js"></script>
 <script type="text/javascript" src="https://itxia.github.io/soft/js/motion.js"></script>

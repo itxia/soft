@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IT侠的博客</title>
@@ -44,7 +44,7 @@
       <pubDate>Fri, 14 Sep 2018 10:00:00 +0000</pubDate>
       
       <guid>https://itxia.github.io/soft/post/InstallMMA/</guid>
-      <description>&lt;!--原来这里不一定必须放一句话才能出现“阅读全文”...--&gt;</description>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
@@ -90,7 +90,6 @@
       
       <guid>https://itxia.github.io/soft/post/HowToUseGit/</guid>
       <description>&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
-
 &lt;p&gt;《GitHub入门与实践》[日]大塚弘记&lt;/p&gt;</description>
     </item>
     
@@ -100,7 +99,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://itxia.github.io/soft/figure/mma/KeyGen_11.3_cn/</guid>
-      <description>MMA 注册机body {font-family: Arial, sans-serif;} function f1(n, byte, c) { // inverse of f2: f1(f2(x, y, c), c, y, c) == xfor (var bitIndex = 0; bitIndex  bitIndex) &amp; 1;if (bit + ((n - bit) &amp; ~1) == n) {n = (n - bit)  1;} else {n = ((c - bit) ^ n)  1;}}return n;}/*function f2(n, byte, c) {for (var bitIndex = 7; bitIndex = 0; bitIndex--) {var bit = (byte  bitIndex) &amp; 1;var tmp = (n = 0; byteIndex--) {hash = f1(hash, str.</description>
+      <description></description>
     </item>
     
     <item>
@@ -109,7 +108,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://itxia.github.io/soft/figure/mma/KeyGen_11.3_en/</guid>
-      <description>Mathematica 11.3body {font-family: Arial, sans-serif;} function f1(n, byte, c) { // inverse of f2: f1(f2(x, y, c), c, y, c) == xfor (var bitIndex = 0; bitIndex  bitIndex) &amp; 1;if (bit + ((n - bit) &amp; ~1) == n) {n = (n - bit)  1;} else {n = ((c - bit) ^ n)  1;}}return n;}/*function f2(n, byte, c) {for (var bitIndex = 7; bitIndex = 0; bitIndex--) {var bit = (byte  bitIndex) &amp; 1;var tmp = (n = 0; byteIndex--) {hash = f1(hash, str.</description>
+      <description></description>
     </item>
     
   </channel>

@@ -251,6 +251,7 @@ $(document).ready(function () {
       }
     },
 
+    /*
     menu: function (integrator) {
       $('.menu-item').velocity('transition.slideDownIn', {
         display: null,
@@ -260,6 +261,7 @@ $(document).ready(function () {
         }
       });
     },
+    */
 
     postList: function (integrator) {
       var $post = $('.post');
@@ -276,7 +278,7 @@ $(document).ready(function () {
           integrator.next();
         };
 
-        $post.velocity('transition.slideDownIn', postMotionOptions);
+        // $post.velocity('transition.slideDownIn', postMotionOptions);
       }
     },
 
