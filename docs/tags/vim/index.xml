@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vim on IT侠的博客</title>
+    <link>https://itxia.github.io/soft/tags/vim/</link>
+    <description>Recent content in vim on IT侠的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 15 Mar 2020 01:34:33 +0800</lastBuildDate>
+    
+	<atom:link href="https://itxia.github.io/soft/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vim极简教程</title>
+      <link>https://itxia.github.io/soft/post/vim/</link>
+      <pubDate>Sun, 15 Mar 2020 01:34:33 +0800</pubDate>
+      
+      <guid>https://itxia.github.io/soft/post/vim/</guid>
+      <description>&lt;p&gt;真的&amp;quot;极简&amp;rdquo;。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,19 @@
     <description>Recent content in Tags on IT侠的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 30 May 2019 00:01:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Mar 2020 01:34:33 +0800</lastBuildDate>
     
 	<atom:link href="https://itxia.github.io/soft/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vim</title>
+      <link>https://itxia.github.io/soft/tags/vim/</link>
+      <pubDate>Sun, 15 Mar 2020 01:34:33 +0800</pubDate>
+      
+      <guid>https://itxia.github.io/soft/tags/vim/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Intro</title>

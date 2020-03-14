@@ -13,6 +13,25 @@
     </entry>
     
      <entry>
+        <title>Vim极简教程</title>
+        <url>https://itxia.github.io/soft/post/vim/</url>
+        <categories>
+          <category>tech</category>
+        </categories>
+        <tags>
+          <tag>vim</tag>
+        </tags>
+        <content type="html"> 真的&amp;quot;极简&amp;rdquo;。
+简介 Vim是什么，网上都能查到，我也懒得说了；但我可以给个图片体会一下，vim为什么那么受欢迎：  图源xkcd
+ 学会退出vim 作为初学者，当你第一次用vim打开一个文件而不知道如何退出时，将是十分有趣的场景（我也是）：  图片原文链接
+ 知乎上也有这样的问题：第一次使用 Vim 时，你是怎么退出的？
+显然，对于用着鼠标长大的现代人，很难一下子就接受来自上古时代的Vim的使用逻辑。因此为了不让新人一开始就被困在vim里出不去，而被劝退，我先讲如何退出：
+ 首先，在vim界面中任何情况下，连按两次 &amp;lt;Esc&amp;gt; 键就可以确保回到可以执行下一步所需的状态，称为 normal mode。 然后，（记得输入法换成英文）输入 :q!，就可以不保存文件退出；或者 :wq，可以保存再退出。注意冒号是命令的一部分（突然三体（x  用vim编辑文字 如果你学会了退出并且觉得&amp;quot;Hmmm, 感觉还行，我还能继续往下看看&amp;rdquo;，那么恭喜你，你离能用vim只剩一半的距离了。
+打开文件  首先，你在命令行里输入 vim file.txt，这样就用vim打开了名为 file.txt 的文件。 然后，在打开的vim窗口中用方向键移动光标，到你想写文字的地方按一下 i 键，这样进入了insert mode，这时你就可以正常地进行打字、删除等操作。 当你编辑完成，用上面说的退出方式，保存并退出。  进一步学习 上面的两点已经足够应付新手的大多数使用场景了，不过这点内容显得太少了。如果想要略微深入的了解，推荐使用自带的 vimtutor作为教程。你可以在GitHub下载： 中文版 英文版
+</content>
+    </entry>
+    
+     <entry>
         <title>主要学术软件简介</title>
         <url>https://itxia.github.io/soft/post/Intro2Softwares/</url>
         <categories>
