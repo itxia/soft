@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-    <title>COMSOL - IT侠的博客</title>
+    <title> - IT侠的博客</title>
     <meta name="keywords" content="">
     
-    <meta property="og:title" content="COMSOL">
+    <meta property="og:title" content="">
     <meta property="og:site_name" content="IT侠的博客">
     <meta property="og:image" content="/img/author.jpg"> 
-    <meta name="title" content="COMSOL - IT侠的博客" />
+    <meta name="title" content=" - IT侠的博客" />
     <meta name="description" content="IT侠博客专为软件教学系列的文档"> 
-    <link rel="alternate" href="https://itxia.github.io/soft/tags/COMSOL/" title="IT侠的博客" type="application/rss+xml" />
+    <link rel="alternate" href="https://itxia.github.io/soft/static/MMA11Crack/" title="IT侠的博客" type="application/rss+xml" />
     
     <link rel="shortcut icon" href="https://itxia.github.io/soft/img/github.ico" />
     <link rel="apple-touch-icon" href="https://itxia.github.io/soft/img/github.png" />
@@ -34,7 +34,7 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-<div class="container one-collumn sidebar-position-left   ">
+<div class="container one-collumn sidebar-position-left page-home  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -111,71 +111,177 @@
             
 <div class="content-wrap">
     <div id="content" class="content">
-        <div class="post-block page" style="opacity: 1; display: block;">
-<section id="posts" class="posts-collapse">
-<div class="collection-title">
-    <h2 >COMSOL
-    <small>标签</small>
-    </h2>
-</div>
-
-<div class="collection-title">
-  <h2 class="archive-year motion-element" id="archive-year-2018">2018</h2>
-</div>
-
-  <article class="post post-type-normal }}" itemscope itemtype="http://schema.org/Article">
+<section id="posts" class="posts-expand">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <div class="post-block" style="opacity: 1; display: block;">
     <header class="post-header">
-      <h1 class="post-title">
-        <a class="post-title-link" href="https://itxia.github.io/soft/post/InstallComsol/" itemprop="url">
-            <span itemprop="name">COMSOL Multiphysics 5.3a 安装教程</span>
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link" href="https://itxia.github.io/soft/static/MMA11Crack/" itemprop="url">
+        
         </a>
       </h1>
-
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-19"
-              content="09-19" >
-          09-19
-        </time>
+      <span class="post-time">
+<span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+</span>
+<span class="post-meta-item-text">时间：</span>
+<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="0001-01-01">
+    0001-01-01
+</time>
+</span> 
+      
+
+       <span>
+&nbsp; | &nbsp;
+<span class="post-meta-item-icon">
+    <i class="fa fa-eye"></i>
+</span>
+
+<span id="busuanzi_value_page_pv"></span> 阅读
+</span>
+
       </div>
     </header>
-  </article>
+    <div class="post-body" itemprop="articleBody">
+    <!DOCTYPE html>
+<html>
+<meta charset="utf-8"> 
+<head>
+  <title>MMA 注册机</title>
+  <style type="text/css">
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+  <script>    
+    function f1(n, byte, c) { // inverse of f2: f1(f2(x, y, c), c, y, c) == x
+      for (var bitIndex = 0; bitIndex <= 7; bitIndex++) {
+        var bit = (byte >> bitIndex) & 1;
+        if (bit + ((n - bit) & ~1) == n) {
+          n = (n - bit) >> 1;
+        } else {
+          n = ((c - bit) ^ n) >> 1;
+        }
+      }
+      return n;
+    }
+    
+    /*function f2(n, byte, c) {
+      for (var bitIndex = 7; bitIndex >= 0; bitIndex--) {
+        var bit = (byte >> bitIndex) & 1;
+        var tmp = (n << 1) + bit;
+        if (n & 0x8000) {
+          tmp ^= c;
+        }
+        n = tmp;
+      }
+      return n;
+    }*/
+    
+    function genPassword(str) {
+      var hash = 0xA439; 
+      for (var byteIndex = str.length - 1; byteIndex >= 0; byteIndex--) {
+        hash = f1(hash, str.charCodeAt(byteIndex), 0x105C3);
+      }
+      
+      var n1 = 0;
+      while (f1(f1(hash, n1 & 0xFF, 0x105C3), n1 >> 8, 0x105C3) != 0xA5B6) {
+        if (++n1 >= 0xFFFF) {
+          return "Error";
+        }
+      }
+      
+      n1 = Math.floor(((n1 + 0x72FA) & 0xFFFF) * 99999.0 / 0xFFFF);
+      var n1str = ("0000" + n1.toString(10)).slice(-5); // this will be used at the end
+      
+      var temp = parseInt(n1str.slice(0,-3) + n1str.slice(-2) + n1str.slice(-3, -2), 10); 
+      temp = Math.ceil((temp / 99999.0) * 0xFFFF);
+      temp = f1(f1(0, temp & 0xFF, 0x1064B), temp >> 8, 0x1064B);
+      
+      for (byteIndex = str.length - 1; byteIndex >= 0; byteIndex--) {
+        temp = f1(temp, str.charCodeAt(byteIndex), 0x1064B);
+      }
+      
+      var n2 = 0;
+      while (f1(f1(temp, n2 & 0xFF, 0x1064B), n2 >> 8, 0x1064B) != 0xA5B6) {
+        if (++n2 >= 0xFFFF) {
+          return "Error";
+        }
+      }
+      
+      n2 = Math.floor((n2 & 0xFFFF) * 99999.0 / 0xFFFF);
+      var n2str = ("0000" + n2.toString(10)).slice(-5);
+      
+      var password = n2str.charAt(3) + n1str.charAt(3) + n1str.charAt(1) + n1str.charAt(0) + "-"
+                   + n2str.charAt(4) + n1str.charAt(2) + n2str.charAt(0) + "-"      
+                   + n2str.charAt(2) + n1str.charAt(4) + n2str.charAt(1) + "::1";
+      return password;
+    }
+    
+    function genFromMathId() {
+      document.getElementById("output").innerHTML = "";
+      var mathId = document.getElementById("str").value;
+      var activationKey = document.getElementById("act").value;	  
+      var password = genPassword(mathId + "$1&" + activationKey);
+	  if ( activationKey == '' || mathId == '') {
+		document.getElementById("output").innerHTML = "请正确填写！</br></br>";
+	  }
+	  else {
+		document.getElementById("output").innerHTML = "密码：" + password + "</br></br>";
+	  }
+    }
+  </script>
+</head>
 
+<body>
+  <h2>Mathematica 11.3 注册机</h2>
+  <p>
+	请输入 Math ID（见安装程序）和任意 "xxxx-xxxx-xxxxxx" 格式的激活密钥，点击 “生成” 即可得到密码。<br/>
+	（注意：密码后的 ::1 是密码的一部分，在复制时务必一同复制）
+  </p>
+  <span>Math ID: </span>
+  <input type="text" id="str" />
+  <br />
+  <span>Activation Key: </span>
+  <input type="text" id="act" value="1224-4321-123456" />
+  <button onclick="genFromMathId()">生成</button>
+  <br/>
+  <br/>
+  <div id="output"></div>
+  <a href="https://avxhm.se/blogs/Artist14">来源</a>
+</body>
 
+</html>
 
- </section>
+    </div>
+    <footer class="post-footer">
+     
+
+     
+
+     <div class="post-nav">
+    <div class="post-nav-next post-nav-item">
+    
+        <a href="https://itxia.github.io/soft/post/HowToUseGit/" rel="next" title="如何使用Git和GitHub">
+        <i class="fa fa-chevron-left"></i> 如何使用Git和GitHub
+        </a>
+    
+    </div>
+
+    <div class="post-nav-prev post-nav-item">
+    
+    </div>
 </div>
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-<nav class="pagination">
-    
-    
-        
-        
-          <span class="page-number current">1</span>
-        
-        
-    
-    
-</nav>
-
+      
+     
+     
+     
+     
+    </footer>
+  </div>
+  </article>
+</section>
 </div>
 </div>
 
@@ -228,7 +334,7 @@
       
 <div class="feed-link motion-element">
         
-        <a href=https://itxia.github.io/soft/tags/COMSOL/index.xml rel="alternate" type="application/rss+xml" target="_blank">
+        <a href= rel="alternate" type="application/rss+xml" target="_blank">
     <i class="fa fa-rss"></i>
     RSS 订阅
 </a>
@@ -318,11 +424,11 @@
 <script type="text/javascript" src="https://itxia.github.io/soft/js/affix.js"></script>
 <script type="text/javascript" src="https://itxia.github.io/soft/js/schemes/pisces.js"></script>
 
-<script type="text/javascript" src="https://itxia.github.io/soft/js/bootstrap.js"></script>
+<script type="text/javascript" src="https://itxia.github.io/soft/js/scrollspy.js"></script>
+<script type="text/javascript" src="https://itxia.github.io/soft/js/post-details.js"></script>
+<script type="text/javascript" src="https://itxia.github.io/soft/js/toc.js"></script>
 
-<script type="text/javascript" id="motion.page.archive">
-  $('.archive-year').velocity('transition.slideLeftIn');
-</script>
+<script type="text/javascript" src="https://itxia.github.io/soft/js/bootstrap.js"></script>
 
 <script type="text/javascript" src="https://itxia.github.io/soft/js/search.js"></script>
 <script type="text/x-mathjax-config">
