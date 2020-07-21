@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿+++
++++
+<!DOCTYPE html>
 <html>
 <meta charset="utf-8"> 
 <head>
@@ -94,8 +96,11 @@
 	请输入 Math ID（见安装程序）和任意 "xxxx-xxxx-xxxxxx" 格式的激活密钥，点击 “生成” 即可得到密码。<br/>
 	（注意：密码后的 ::1 是密码的一部分，在复制时务必一同复制）
   </p>
-  <input type="text" id="str"/>
-  <input type="text" id="act"/>
+  <span>Math ID: </span>
+  <input type="text" id="str" />
+  <br />
+  <span>Activation Key: </span>
+  <input type="text" id="act" value="1224-4321-123456" />
   <button onclick="genFromMathId()">生成</button>
   <br/>
   <br/>
