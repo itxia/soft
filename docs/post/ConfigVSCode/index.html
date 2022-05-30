@@ -205,84 +205,236 @@
 <p>在出现的<code>用户设置</code>这个文件里，把以下内容复制粘贴进去，并保存(<!-- raw HTML omitted --><!-- raw HTML omitted -->注意：<!-- raw HTML omitted --><!-- raw HTML omitted -->如果打开的<code>用户设置</code>/<code>settings.json</code>文件是空白的，要先输入一对花括号<code>{}</code>，再把这段内容粘贴到花括号里面；如果不是空白的，比如已经有了一对花括号和几行文字，请在第一个花括号后面粘贴。如有任何格式问题如逗号，vscode会提示的。)：</p>
 <div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 37
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 38
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 39
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 40
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 41
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 42
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 43
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 44
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 45
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 46
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 47
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 48
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 49
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 50
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 51
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 52
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 53
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 54
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 55
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 56
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 57
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 58
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 59
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 60
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 61
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 62
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 63
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 64
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 65
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 66
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 67
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 68
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 69
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 70
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 71
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 72
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 73
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 74
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 75
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 76
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 77
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 78
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 79
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 80
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 81
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 82
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 83
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 84
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 85
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 86
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 87
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 88
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 89
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 90
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 91
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 92
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 93
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 94
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 95
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 96
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 97
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 98
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">104
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">105
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">106
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">107
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">108
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">109
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">110
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">111
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">112
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">113
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">114
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#d88200">&#34;latex-workshop.latex.recipes&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#111">[</span>
- <span style="color:#111">{</span>
-   <span style="color:#f92672">&#34;name&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;xelatex&#34;</span><span style="color:#111">,</span>
-   <span style="color:#f92672">&#34;tools&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
-     <span style="color:#d88200">&#34;xelatex&#34;</span>
-   <span style="color:#111">]</span>
- <span style="color:#111">},</span>
- <span style="color:#111">{</span>
-   <span style="color:#f92672">&#34;name&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;xelatex -&gt; bibtex -&gt; xelatex*2&#34;</span><span style="color:#111">,</span>
-   <span style="color:#f92672">&#34;tools&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
-     <span style="color:#d88200">&#34;xelatex&#34;</span><span style="color:#111">,</span>
-     <span style="color:#d88200">&#34;bibtex&#34;</span><span style="color:#111">,</span>
-     <span style="color:#d88200">&#34;xelatex&#34;</span><span style="color:#111">,</span>
-     <span style="color:#d88200">&#34;xelatex&#34;</span>
-   <span style="color:#111">]</span>
- <span style="color:#111">}</span>
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#960050;background-color:#1e0010">//</span> <span style="color:#960050;background-color:#1e0010">======</span> <span style="color:#960050;background-color:#1e0010">LaTeX-Workshop</span> <span style="color:#960050;background-color:#1e0010">======</span>
+<span style="color:#d88200">&#34;latex-workshop.message.update.show&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#00a8c8">false</span><span style="color:#960050;background-color:#1e0010">,</span>
+<span style="color:#d88200">&#34;latex-workshop.latex.autoBuild.run&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#d88200">&#34;never&#34;</span><span style="color:#960050;background-color:#1e0010">,</span>
+<span style="color:#d88200">&#34;latex-workshop.latex.magic.args&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#111">[</span>
+    <span style="color:#d88200">&#34;-synctex=1&#34;</span><span style="color:#111">,</span>
+    <span style="color:#d88200">&#34;-interaction=nonstopmode&#34;</span><span style="color:#111">,</span>
+    <span style="color:#d88200">&#34;-file-line-error&#34;</span><span style="color:#111">,</span>
+    <span style="color:#d88200">&#34;-shell-escape&#34;</span><span style="color:#111">,</span>
+    <span style="color:#d88200">&#34;%DOCFILE%&#34;</span>
 <span style="color:#111">]</span><span style="color:#960050;background-color:#1e0010">,</span>
-<span style="color:#d88200">&#34;latex-workshop.latex.tools&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#111">[</span>
- <span style="color:#111">{</span>
-   <span style="color:#f92672">&#34;name&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;xelatex&#34;</span><span style="color:#111">,</span>
-   <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;xelatex&#34;</span><span style="color:#111">,</span>
-   <span style="color:#f92672">&#34;args&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
-     <span style="color:#d88200">&#34;-synctex=1&#34;</span><span style="color:#111">,</span>
-     <span style="color:#d88200">&#34;-interaction=nonstopmode&#34;</span><span style="color:#111">,</span>
-     <span style="color:#d88200">&#34;-file-line-error&#34;</span><span style="color:#111">,</span>
-     <span style="color:#d88200">&#34;-shell-escape&#34;</span><span style="color:#111">,</span>
-     <span style="color:#d88200">&#34;-pdf&#34;</span><span style="color:#111">,</span>
-     <span style="color:#d88200">&#34;%DOCFILE%&#34;</span>
-   <span style="color:#111">]</span>
- <span style="color:#111">},</span>
- <span style="color:#111">{</span>
-   <span style="color:#f92672">&#34;name&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;bibtex&#34;</span><span style="color:#111">,</span>
-   <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;bibtex&#34;</span><span style="color:#111">,</span>
-   <span style="color:#f92672">&#34;args&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
-     <span style="color:#d88200">&#34;%DOCFILE%&#34;</span>
-   <span style="color:#111">]</span>
- <span style="color:#111">}</span>
-<span style="color:#111">]</span><span style="color:#960050;background-color:#1e0010">,</span>
+<span style="color:#d88200">&#34;latex-workshop.latex.recipes&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#111">[</span>
+    <span style="color:#111">{</span>
+        <span style="color:#f92672">&#34;name&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;latexmk(xe)&#34;</span><span style="color:#111">,</span>
+        <span style="color:#f92672">&#34;tools&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+            <span style="color:#d88200">&#34;latexmk(xe)&#34;</span>
+        <span style="color:#111">]</span>
+    <span style="color:#111">},</span>
+    <span style="color:#111">{</span>
+        <span style="color:#f92672">&#34;name&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;xelatex&#34;</span><span style="color:#111">,</span>
+        <span style="color:#f92672">&#34;tools&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+            <span style="color:#d88200">&#34;xelatex&#34;</span>
+        <span style="color:#111">]</span>
+    <span style="color:#111">},</span>
+    <span style="color:#111">{</span>
+        <span style="color:#f92672">&#34;name&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;xelatex -&gt; bibtex -&gt; xelatex*2&#34;</span><span style="color:#111">,</span>
+        <span style="color:#f92672">&#34;tools&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+            <span style="color:#d88200">&#34;xelatex&#34;</span><span style="color:#111">,</span>
+            <span style="color:#d88200">&#34;bibtex&#34;</span><span style="color:#111">,</span>
+            <span style="color:#d88200">&#34;xelatex&#34;</span><span style="color:#111">,</span>
+            <span style="color:#d88200">&#34;xelatex&#34;</span>
+        <span style="color:#111">]</span>
+    <span style="color:#111">},</span>
+    <span style="color:#111">{</span>
+        <span style="color:#f92672">&#34;name&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;xelatex -&gt; biber -&gt; xelatex*2&#34;</span><span style="color:#111">,</span>
+        <span style="color:#f92672">&#34;tools&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+             <span style="color:#d88200">&#34;xelatex&#34;</span><span style="color:#111">,</span>
+             <span style="color:#d88200">&#34;biber&#34;</span><span style="color:#111">,</span>
+             <span style="color:#d88200">&#34;xelatex&#34;</span><span style="color:#111">,</span>
+             <span style="color:#d88200">&#34;xelatex&#34;</span>
+         <span style="color:#111">]</span>
+     <span style="color:#111">}</span>
+ <span style="color:#111">]</span><span style="color:#960050;background-color:#1e0010">,</span>
+ <span style="color:#d88200">&#34;latex-workshop.latex.tools&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#111">[</span>
+     <span style="color:#111">{</span>
+         <span style="color:#f92672">&#34;name&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;xelatex&#34;</span><span style="color:#111">,</span>
+         <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;xelatex&#34;</span><span style="color:#111">,</span>
+         <span style="color:#f92672">&#34;args&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+             <span style="color:#d88200">&#34;-synctex=1&#34;</span><span style="color:#111">,</span>
+             <span style="color:#d88200">&#34;-interaction=nonstopmode&#34;</span><span style="color:#111">,</span>
+             <span style="color:#d88200">&#34;-file-line-error&#34;</span><span style="color:#111">,</span>
+             <span style="color:#d88200">&#34;-shell-escape&#34;</span><span style="color:#111">,</span>
+             <span style="color:#960050;background-color:#1e0010">//</span> <span style="color:#d88200">&#34;-pdf&#34;</span><span style="color:#111">,</span>
+             <span style="color:#d88200">&#34;%DOCFILE%&#34;</span>
+         <span style="color:#111">]</span>
+     <span style="color:#111">},</span>
+     <span style="color:#111">{</span>
+         <span style="color:#f92672">&#34;name&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;bibtex&#34;</span><span style="color:#111">,</span>
+         <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;bibtex&#34;</span><span style="color:#111">,</span>
+         <span style="color:#f92672">&#34;args&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+             <span style="color:#d88200">&#34;%DOCFILE%&#34;</span>
+         <span style="color:#111">]</span>
+     <span style="color:#111">},</span>
+     <span style="color:#111">{</span>
+         <span style="color:#f92672">&#34;name&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;biber&#34;</span><span style="color:#111">,</span>
+         <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;biber&#34;</span><span style="color:#111">,</span>
+         <span style="color:#f92672">&#34;args&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+             <span style="color:#d88200">&#34;%DOCFILE%&#34;</span>
+         <span style="color:#111">]</span>
+     <span style="color:#111">},</span>
+     <span style="color:#111">{</span>
+         <span style="color:#f92672">&#34;name&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;latexmk(xe)&#34;</span><span style="color:#111">,</span>
+         <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;latexmk&#34;</span><span style="color:#111">,</span>
+         <span style="color:#f92672">&#34;args&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+             <span style="color:#d88200">&#34;-xelatex&#34;</span><span style="color:#111">,</span>
+             <span style="color:#d88200">&#34;-synctex=1&#34;</span><span style="color:#111">,</span>
+             <span style="color:#d88200">&#34;-interaction=nonstopmode&#34;</span><span style="color:#111">,</span>
+             <span style="color:#d88200">&#34;-file-line-error&#34;</span><span style="color:#111">,</span>
+             <span style="color:#d88200">&#34;-shell-escape&#34;</span><span style="color:#111">,</span>
+             <span style="color:#960050;background-color:#1e0010">//</span> <span style="color:#d88200">&#34;-pdf&#34;</span><span style="color:#111">,</span>
+             <span style="color:#d88200">&#34;%DOCFILE%&#34;</span>
+         <span style="color:#111">]</span>
+     <span style="color:#111">}</span>
+ <span style="color:#111">]</span><span style="color:#960050;background-color:#1e0010">,</span>
+ <span style="color:#d88200">&#34;latex-workshop.latex.clean.fileTypes&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#111">[</span>
+     <span style="color:#d88200">&#34;*.acn&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.acr&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.alg&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.aux&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.bbl&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.bcf&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.blg&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.dvi&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.fdb_latexmk&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.fls&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.glg&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.glo&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.gls&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.gz&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.hd&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.idx&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.ind&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.ind&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.ist&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.lof&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.log&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.lot&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.nav&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.out&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.out.ps&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.run.xml&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.snm&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.toc&#34;</span><span style="color:#111">,</span>
+     <span style="color:#d88200">&#34;*.xdv&#34;</span>
+ <span style="color:#111">]</span><span style="color:#960050;background-color:#1e0010">,</span>
 </code></pre></td></tr></table>
 </div>
 </div><p><img src="https://itxia.github.io/soft/figure/vscode/6.png" alt="fig6"></p>
@@ -304,15 +456,12 @@
 <li>
 <p>tex文件写完准备编译。按下快捷键 <code>Ctrl+Shift+P</code>输入 <code>LaTeX Workshop: Build</code>，会看到如图所示的两个选项。<!-- raw HTML omitted --><!-- raw HTML omitted -->首次<!-- raw HTML omitted --><!-- raw HTML omitted -->编译时，选择<code>Build with recipe</code>：
 <img src="https://itxia.github.io/soft/figure/vscode/buildwith.png" alt="build with recipe">
-一般情况下选择第一个 <code>xelatex</code>即可；如果需要<strong>生成或重新生成</strong>引用文献的条目(即bibliography)，则选择第二个 <code>xelatex -&gt; bibtex -&gt; xelatex*2</code>：
-<img src="https://itxia.github.io/soft/figure/vscode/recipes.png" alt="recipes">
+一般情况下选择第一个 <code>latexmk(xe)</code> 即可。<!-- raw HTML omitted -->
 这样操作后，vscode就记住了你的编译偏好，下次编译时可以直接选择<code>Build LaTeX project</code>或者按它对应的快捷键了。</p>
 </li>
-<li>
-<p>我正常使用的时候喜欢vscode和SumatraPDF各占一半。使用<code>Ctrl+Shift+P</code>输入<code>LaTeX Workshop</code>可以查看和LaTeX相关的各个命令及快捷键，如图所示。编译的快捷键是<code>Ctrl+L Alt+B</code>，<code>L Alt</code>表示左侧的<code>Alt</code>键。
-<img src="https://itxia.github.io/soft/figure/vscode/11.png" alt="fig11"></p>
-</li>
 </ol>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p>vscode有很多快捷键，你可以在<code>文件(F)</code> - <code>首选项(P)</code> - <code>键盘快捷方式</code>中查看。</p>
 <!-- raw HTML omitted -->
     </div>
@@ -470,12 +619,12 @@
       <div class="footer-inner">
         <div class="copyright" >
   <span itemprop="copyrightYear">  &copy; 
-  2017 - 2020</span>
+  2017 - 2022</span>
   <span class="with-love"><i class="fa fa-heart"></i></span>
   <span class="author" itemprop="copyrightHolder">ITxia &amp; More</span>
 </div>
 <div class="powered-by">
-  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.73.0</a>
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.80.0</a>
 </div>
 <div class="theme-info">
   Theme by - <a class="theme-link" href="https://github.com/github-young/hugo-theme-next" target="_blank"> NexT.Gemini

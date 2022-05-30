@@ -194,17 +194,9 @@
 <code>打开此电脑</code> - <code>右键DVD驱动器: X (DVD Drive: X)</code> - <code>点击弹出(Eject)</code>。</p>
 </li>
 </ol>
-<h2 id="配置">配置</h2>
-<ol>
-<li>配置TeXLive的二进制文件们。
-<code>添加 C:\TeXlive\2018\bin 到 Path</code> (方法见附录)</li>
-<li>安装SumatraPDF阅读器。(非必须，sumatra的优点是可以实时刷新pdf。)
-到<a href="https://www.sumatrapdfreader.org/download-free-pdf-viewer.html">SumatraPDF官网</a>下载对应你电脑系统的安装包，如<code>SumatraPDF-x.x.x-64-install.exe</code>的这个文件。下载后，双击安装即可。</li>
-</ol>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
 <h2 id="测试">测试</h2>
-<p>新建一个TeX文件，随意写入内容。如<code>test.tex</code>：</p>
+<p>在<a href="https://itxia.github.io/soft/2018/09/10/ConfigVSCode/">另一篇文章</a>中会介绍使用 <code>VScode</code> 写LaTeX文档的方法。</p>
+<p>在VSCode中新建一个TeX文件，随意写入内容。如<code>test.tex</code>：</p>
 <div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -223,8 +215,17 @@ Hello, <span style="color:#00a8c8">\LaTeX</span> !
 <span style="color:#00a8c8">\end</span><span style="color:#111">{</span>document<span style="color:#111">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>然后，在<code>test.tex</code>所在文件夹的空白处，<code>按住Shift</code>+<code>鼠标右键</code>，选择<code>在此处打开PowerShell窗口(Open PowerShell window here)</code>，输入<code>xelatex test.tex</code>并回车。运行完成后，若文件夹内出现<code>test.pdf</code>且用sumatra打开查看没问题，则说明TeXLive安装和配置均已成功！</p>
-<p>在<a href="https://itxia.github.io/soft/2018/09/10/ConfigVSCode/">另一篇文章</a>中会介绍配合<code>VScode</code>和<code>SumatraPDF</code>写LaTeX文档的方法。</p>
+</div><p>然后按照那篇文章的教程尝试编译。</p>
+<p>如果VSCode编译不成功，在 <code>test.tex</code> 所在文件夹的空白处，<code>按住Shift</code>+<code>鼠标右键</code>，选择 <code>在此处打开PowerShell窗口(Open PowerShell window here) </code>，输入 <code>xelatex test.tex</code> 并回车。运行完成后，若文件夹内出现 <code>test.pdf</code> 且用PDF阅读器打开查看没问题，则说明TeXLive安装和配置均已成功！如果提示找不到 <code>xelatex.exe</code>，则需要按下文内容进行配置。</p>
+<h2 id="配置">配置</h2>
+<ol>
+<li>配置TeXLive的二进制文件们。
+<code>添加 C:\TeXlive\2018\bin 到 Path</code> (方法见附录)</li>
+<li>安装SumatraPDF阅读器。(非必须，sumatra的优点是可以实时刷新pdf。)
+到<a href="https://www.sumatrapdfreader.org/download-free-pdf-viewer.html">SumatraPDF官网</a>下载对应你电脑系统的安装包，如<code>SumatraPDF-x.x.x-64-install.exe</code>的这个文件。下载后，双击安装即可。</li>
+</ol>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h2 id="附录appendix">附录(Appendix)</h2>
 <ol>
 <li>
@@ -397,8 +398,8 @@ tlmgr update --all
   <ul>
     <li><a href="#下载">下载</a></li>
     <li><a href="#安装">安装</a></li>
-    <li><a href="#配置">配置</a></li>
     <li><a href="#测试">测试</a></li>
+    <li><a href="#配置">配置</a></li>
     <li><a href="#附录appendix">附录(Appendix)</a></li>
   </ul>
 </nav></div>
@@ -415,12 +416,12 @@ tlmgr update --all
       <div class="footer-inner">
         <div class="copyright" >
   <span itemprop="copyrightYear">  &copy; 
-  2017 - 2020</span>
+  2017 - 2022</span>
   <span class="with-love"><i class="fa fa-heart"></i></span>
   <span class="author" itemprop="copyrightHolder">ITxia &amp; More</span>
 </div>
 <div class="powered-by">
-  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.73.0</a>
+  Powered by - <a class="theme-link" href="http://gohugo.io" target="_blank" title="hugo" >Hugo v0.80.0</a>
 </div>
 <div class="theme-info">
   Theme by - <a class="theme-link" href="https://github.com/github-young/hugo-theme-next" target="_blank"> NexT.Gemini
