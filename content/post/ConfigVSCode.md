@@ -1,6 +1,6 @@
 ---
 title: "配置VSCode"
-date: 2018-09-10 12:35:42
+date: 2022-05-29 12:35:42
 categories: ["软件教学系列"]
 tags: [vscode]
 toc: true

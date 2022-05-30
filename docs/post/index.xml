@@ -6,14 +6,32 @@
     <description>Recent content in Posts on IT侠的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 15 Mar 2020 01:34:33 +0800</lastBuildDate><atom:link href="https://itxia.github.io/soft/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 May 2022 18:05:03 +0000</lastBuildDate><atom:link href="https://itxia.github.io/soft/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>安装TeXLive 2018</title>
+      <link>https://itxia.github.io/soft/post/InstallTeXLive/</link>
+      <pubDate>Sun, 29 May 2022 18:05:03 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/post/InstallTeXLive/</guid>
+      <description>&lt;p&gt;整个安装、测试过程约花费1小时，请合理安排时间。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Vim极简教程</title>
       <link>https://itxia.github.io/soft/post/vim/</link>
-      <pubDate>Sun, 15 Mar 2020 01:34:33 +0800</pubDate>
+      <pubDate>Mon, 30 May 2022 01:34:33 +0800</pubDate>
       
       <guid>https://itxia.github.io/soft/post/vim/</guid>
       <description>&lt;p&gt;真的&amp;quot;极简&amp;quot;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>配置VSCode</title>
+      <link>https://itxia.github.io/soft/post/ConfigVSCode/</link>
+      <pubDate>Sun, 29 May 2022 12:35:42 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/post/ConfigVSCode/</guid>
+      <description>&lt;p&gt;超简短一键式配置(那是以前的版本&amp;hellip;)&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -62,30 +80,12 @@
     </item>
     
     <item>
-      <title>配置VSCode</title>
-      <link>https://itxia.github.io/soft/post/ConfigVSCode/</link>
-      <pubDate>Mon, 10 Sep 2018 12:35:42 +0000</pubDate>
-      
-      <guid>https://itxia.github.io/soft/post/ConfigVSCode/</guid>
-      <description>&lt;p&gt;超简短一键式配置(那是以前的版本&amp;hellip;)&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>安装Matlab R2018a</title>
       <link>https://itxia.github.io/soft/post/InstallMatlab/</link>
       <pubDate>Mon, 10 Sep 2018 08:00:00 +0000</pubDate>
       
       <guid>https://itxia.github.io/soft/post/InstallMatlab/</guid>
       <description>&lt;p&gt;整个安装、测试过程约花费30~60分钟，请合理安排时间。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>安装TeXLive 2018</title>
-      <link>https://itxia.github.io/soft/post/InstallTeXLive/</link>
-      <pubDate>Sun, 09 Sep 2018 18:05:03 +0000</pubDate>
-      
-      <guid>https://itxia.github.io/soft/post/InstallTeXLive/</guid>
-      <description>&lt;p&gt;整个安装、测试过程约花费1小时，请合理安排时间。&lt;/p&gt;</description>
     </item>
     
     <item>

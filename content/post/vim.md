@@ -1,6 +1,6 @@
 +++
 title = "Vim极简教程"
-date = 2020-03-15T01:34:33+08:00
+date = 2022-05-30T01:34:33+08:00
 categories = ["tech"]
 tags = ["vim"]
 postauthor = ["xy"]

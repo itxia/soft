@@ -1,6 +1,6 @@
 ---
 title: "安装TeXLive 2018"
-date: 2018-09-09 18:05:03
+date: 2022-05-29 18:05:03
 categories: ["软件教学系列"]
 tags: ["TeX"]
 toc: true

@@ -6,13 +6,31 @@
     <description>Recent content in Tags on IT侠的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 15 Mar 2020 01:34:33 +0800</lastBuildDate><atom:link href="https://itxia.github.io/soft/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 May 2022 18:05:03 +0000</lastBuildDate><atom:link href="https://itxia.github.io/soft/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TeX</title>
+      <link>https://itxia.github.io/soft/tags/TeX/</link>
+      <pubDate>Sun, 29 May 2022 18:05:03 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/tags/TeX/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>vim</title>
       <link>https://itxia.github.io/soft/tags/vim/</link>
-      <pubDate>Sun, 15 Mar 2020 01:34:33 +0800</pubDate>
+      <pubDate>Mon, 30 May 2022 01:34:33 +0800</pubDate>
       
       <guid>https://itxia.github.io/soft/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vscode</title>
+      <link>https://itxia.github.io/soft/tags/vscode/</link>
+      <pubDate>Sun, 29 May 2022 12:35:42 +0000</pubDate>
+      
+      <guid>https://itxia.github.io/soft/tags/vscode/</guid>
       <description></description>
     </item>
     
@@ -62,29 +80,11 @@
     </item>
     
     <item>
-      <title>vscode</title>
-      <link>https://itxia.github.io/soft/tags/vscode/</link>
-      <pubDate>Mon, 10 Sep 2018 12:35:42 +0000</pubDate>
-      
-      <guid>https://itxia.github.io/soft/tags/vscode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Matlab</title>
       <link>https://itxia.github.io/soft/tags/Matlab/</link>
       <pubDate>Mon, 10 Sep 2018 08:00:00 +0000</pubDate>
       
       <guid>https://itxia.github.io/soft/tags/Matlab/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TeX</title>
-      <link>https://itxia.github.io/soft/tags/TeX/</link>
-      <pubDate>Sun, 09 Sep 2018 18:05:03 +0000</pubDate>
-      
-      <guid>https://itxia.github.io/soft/tags/TeX/</guid>
       <description></description>
     </item>
     
