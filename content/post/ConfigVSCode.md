@@ -52,45 +52,121 @@ VSCode，全称``Microsoft Visual Studio Code``，下文径称vscode(因为懒�
 1. 在出现的``用户设置``这个文件里，把以下内容复制粘贴进去，并保存(<b><font color='red'>注意：</font></b>如果打开的`` 用户设置 ``/`` settings.json ``文件是空白的，要先输入一对花括号`` {} ``，再把这段内容粘贴到花括号里面；如果不是空白的，比如已经有了一对花括号和几行文字，请在第一个花括号后面粘贴。如有任何格式问题如逗号，vscode会提示的。)：
 
     ```json
-   "latex-workshop.latex.recipes": [
-     {
-       "name": "xelatex",
-       "tools": [
-         "xelatex"
-       ]
-     },
-     {
-       "name": "xelatex -> bibtex -> xelatex*2",
-       "tools": [
-         "xelatex",
-         "bibtex",
-         "xelatex",
-         "xelatex"
-       ]
-     }
-   ],
-   "latex-workshop.latex.tools": [
-     {
-       "name": "xelatex",
-       "command": "xelatex",
-       "args": [
-         "-synctex=1",
-         "-interaction=nonstopmode",
-         "-file-line-error",
-         "-shell-escape",
-         "-pdf",
-         "%DOCFILE%"
-       ]
-     },
-     {
-       "name": "bibtex",
-       "command": "bibtex",
-       "args": [
-         "%DOCFILE%"
-       ]
-     }
-   ],
-   ```
+    // ====== LaTeX-Workshop ======
+    "latex-workshop.message.update.show": false,
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.magic.args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-shell-escape",
+        "%DOCFILE%"
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk(xe)",
+            "tools": [
+                "latexmk(xe)"
+            ]
+        },
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "xelatex -> bibtex -> xelatex*2",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "xelatex -> biber -> xelatex*2",
+            "tools": [
+                 "xelatex",
+                 "biber",
+                 "xelatex",
+                 "xelatex"
+             ]
+         }
+     ],
+     "latex-workshop.latex.tools": [
+         {
+             "name": "xelatex",
+             "command": "xelatex",
+             "args": [
+                 "-synctex=1",
+                 "-interaction=nonstopmode",
+                 "-file-line-error",
+                 "-shell-escape",
+                 // "-pdf",
+                 "%DOCFILE%"
+             ]
+         },
+         {
+             "name": "bibtex",
+             "command": "bibtex",
+             "args": [
+                 "%DOCFILE%"
+             ]
+         },
+         {
+             "name": "biber",
+             "command": "biber",
+             "args": [
+                 "%DOCFILE%"
+             ]
+         },
+         {
+             "name": "latexmk(xe)",
+             "command": "latexmk",
+             "args": [
+                 "-xelatex",
+                 "-synctex=1",
+                 "-interaction=nonstopmode",
+                 "-file-line-error",
+                 "-shell-escape",
+                 // "-pdf",
+                 "%DOCFILE%"
+             ]
+         }
+     ],
+     "latex-workshop.latex.clean.fileTypes": [
+         "*.acn",
+         "*.acr",
+         "*.alg",
+         "*.aux",
+         "*.bbl",
+         "*.bcf",
+         "*.blg",
+         "*.dvi",
+         "*.fdb_latexmk",
+         "*.fls",
+         "*.glg",
+         "*.glo",
+         "*.gls",
+         "*.gz",
+         "*.hd",
+         "*.idx",
+         "*.ind",
+         "*.ind",
+         "*.ist",
+         "*.lof",
+         "*.log",
+         "*.lot",
+         "*.nav",
+         "*.out",
+         "*.out.ps",
+         "*.run.xml",
+         "*.snm",
+         "*.toc",
+         "*.xdv"
+     ],
+    ```
    ![fig6](/figure/vscode/6.png)
 
 <!--
@@ -147,12 +223,12 @@ VSCode，全称``Microsoft Visual Studio Code``，下文径称vscode(因为懒�
 
 1. tex文件写完准备编译。按下快捷键 `` Ctrl+Shift+P ``输入 `` LaTeX Workshop: Build ``，会看到如图所示的两个选项。<b><font color='blue'>首次</font></b>编译时，选择`` Build with recipe ``：
    ![build with recipe](/figure/vscode/buildwith.png)
-   一般情况下选择第一个 `` xelatex ``即可；如果需要**生成或重新生成**引用文献的条目(即bibliography)，则选择第二个 `` xelatex -> bibtex -> xelatex*2 ``：
-   ![recipes](/figure/vscode/recipes.png)
+   一般情况下选择第一个 `` latexmk(xe) `` 即可。<!--；如果需要**生成或重新生成**引用文献的条目(即bibliography)，则选择第二个 `` xelatex -> bibtex -> xelatex*2 ``：
+   ![recipes](/figure/vscode/recipes.png)-->
    这样操作后，vscode就记住了你的编译偏好，下次编译时可以直接选择`` Build LaTeX project ``或者按它对应的快捷键了。
    
-1. 我正常使用的时候喜欢vscode和SumatraPDF各占一半。使用``Ctrl+Shift+P``输入``LaTeX Workshop``可以查看和LaTeX相关的各个命令及快捷键，如图所示。编译的快捷键是``Ctrl+L Alt+B``，``L Alt``表示左侧的``Alt``键。
-   ![fig11](/figure/vscode/11.png)
+<!--1. 我正常使用的时候喜欢vscode和SumatraPDF各占一半。使用``Ctrl+Shift+P``输入``LaTeX Workshop``可以查看和LaTeX相关的各个命令及快捷键，如图所示。编译的快捷键是``Ctrl+L Alt+B``，``L Alt``表示左侧的``Alt``键。
+   ![fig11](/figure/vscode/11.png)-->
 
 
 

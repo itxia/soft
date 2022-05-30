@@ -36,17 +36,10 @@ toc: true
 4. 安装完成后，别忘了弹出这个``iso``镜像。
 ``打开此电脑`` - ``右键DVD驱动器: X (DVD Drive: X)`` - ``点击弹出(Eject)``。
 
-## 配置
-1. 配置TeXLive的二进制文件们。
-   ``添加 C:\TeXlive\2018\bin 到 Path`` (方法见附录)
-2. 安装SumatraPDF阅读器。(非必须，sumatra的优点是可以实时刷新pdf。)
-   到[SumatraPDF官网](https://www.sumatrapdfreader.org/download-free-pdf-viewer.html)下载对应你电脑系统的安装包，如``SumatraPDF-x.x.x-64-install.exe``的这个文件。下载后，双击安装即可。
-<!--   (2) 解压压缩包，将里面的``SumatraPDF.exe``复制粘贴到一个你记得的地方，你可以选择重命名以方便命令行使用。比如``C:\D\study\SumatraPDF\sumatra.exe``
-   (3) ``添加 C:\D\study\SumatraPDF\sumatra.exe 到 Path``
--->
-
 ## 测试
-新建一个TeX文件，随意写入内容。如``test.tex``：
+在[另一篇文章](/2018/09/10/ConfigVSCode/)中会介绍使用 ``VScode`` 写LaTeX文档的方法。
+
+在VSCode中新建一个TeX文件，随意写入内容。如``test.tex``：
 ```LaTeX
 % !Mode:: "TeX:UTF-8"
 % !TEX program  = xelatex %这两行不是必须的，但是建议加上
@@ -56,9 +49,18 @@ Hello, \LaTeX !
 \end{document}
 ```
 
-然后，在``test.tex``所在文件夹的空白处，``按住Shift``+``鼠标右键``，选择``在此处打开PowerShell窗口(Open PowerShell window here)``，输入``xelatex test.tex``并回车。运行完成后，若文件夹内出现``test.pdf``且用sumatra打开查看没问题，则说明TeXLive安装和配置均已成功！
+然后按照那篇文章的教程尝试编译。
 
-在[另一篇文章](/2018/09/10/ConfigVSCode/)中会介绍配合``VScode``和``SumatraPDF``写LaTeX文档的方法。
+如果VSCode编译不成功，在 ``test.tex`` 所在文件夹的空白处，``按住Shift``+``鼠标右键``，选择 ``在此处打开PowerShell窗口(Open PowerShell window here) ``，输入 ``xelatex test.tex`` 并回车。运行完成后，若文件夹内出现 ``test.pdf`` 且用PDF阅读器打开查看没问题，则说明TeXLive安装和配置均已成功！如果提示找不到 ``xelatex.exe``，则需要按下文内容进行配置。
+
+## 配置
+1. 配置TeXLive的二进制文件们。
+   ``添加 C:\TeXlive\2018\bin 到 Path`` (方法见附录)
+2. 安装SumatraPDF阅读器。(非必须，sumatra的优点是可以实时刷新pdf。)
+   到[SumatraPDF官网](https://www.sumatrapdfreader.org/download-free-pdf-viewer.html)下载对应你电脑系统的安装包，如``SumatraPDF-x.x.x-64-install.exe``的这个文件。下载后，双击安装即可。
+<!--   (2) 解压压缩包，将里面的``SumatraPDF.exe``复制粘贴到一个你记得的地方，你可以选择重命名以方便命令行使用。比如``C:\D\study\SumatraPDF\sumatra.exe``
+   (3) ``添加 C:\D\study\SumatraPDF\sumatra.exe 到 Path``
+-->
 
 ## 附录(Appendix)
 1. **定义函数** ``添加 ... 到 Path(Add ... to Path)`` ：
